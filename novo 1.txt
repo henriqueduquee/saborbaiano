@@ -1,0 +1,4604 @@
+
+
+
+	<!DOCTYPE html>
+	<!--[if IE 9]><html class="ie ie9"> <![endif]-->
+	<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="pizza, delivery food, fast food, sushi, take away, chinese, italian food">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta name="robots" content="index, fallow" />
+		<link rel="canonical" href="https://cardapiozap.app.br/lojateste">
+		<meta name="author" content="Arcknet">
+		<meta name="og:title" content="Card�pio | Sabor Bahiano " />
+		<meta name="og:type" content="website">
+		<meta property="og:site_name" content="Card�pio Zap"/>
+		<meta property="og:url" content="https://cardapiozap.app.br/lojateste"/>
+		<meta property="og:description" content="Loja testes para demonstra��o!" />
+		<meta name="description" content="Loja testes para demonstra��o!">
+		<meta property="og:image"content="https://cardapiozap.app.br/uploads/images/2020/12/logomarca-cardapiozap.jpg"/>
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<title>Card�pio | Loja Teste</title>
+
+		<!-- Favicons-->
+		<link rel="shortcut icon" href="https://cardapiozap.app.br/img/favicon.png" type="image/x-icon">
+		<!-- GOOGLE WEB FONT -->
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,300,300italic' rel='stylesheet' type='text/css'>
+	
+		<!-- Exibicao de Horario Real -->
+                <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+                <script type="text/javascript">
+                        jQuery(window).load(function($){
+                                atualizaRelogio();
+                        });
+                </script>
+	
+		<!-- ALTERAR CORES -->
+        <style>
+
+#preloader{
+    background-color: #000000 !important;
+}
+
+.box_style_2 h2.inner{
+    background-color: #04ad01 !important;
+    color: #000000 !important;
+}
+    header.sticky{
+    background-color: #04ad01 !important;    
+    
+    }
+    
+    header{
+    background-color: #04ad01 !important;    
+    
+    }
+    
+    
+</style>
+		<!-- BASE CSS -->
+		<link href="https://cardapiozap.app.br/css/base.css" rel="stylesheet">
+		<link href="https://cardapiozap.app.br/css/custom.css" rel="stylesheet">
+		<link href="https://cardapiozap.app.br/css/reset.css" rel="stylesheet">
+		<link href="https://cardapiozap.app.br/css/datepicker.css" rel="stylesheet">
+		<link href="https://cardapiozap.app.br/css/style-bt-file.css" rel="stylesheet">
+		<link href="https://cardapiozap.app.br/css/suportewats.css" rel="stylesheet">
+		<link href="https://cardapiozap.app.br/css/icheck/icheck-material.css" rel="stylesheet">
+	
+		<style type="text/css">
+			@media (min-width: 768px) {
+				.omb_row-sm-offset-3 div:first-child[class*="col-"] {
+					margin-left: 25%;
+				}
+			}
+
+			.omb_login .omb_authTitle {
+				text-align: center;
+				line-height: 300%;
+			}
+
+			.omb_login .omb_socialButtons a {
+				color: white; // In yourUse @body-bg 
+				opacity:0.9;
+			}
+			.omb_login .omb_socialButtons a:hover {
+				color: white;
+				opacity:1;    	
+			}
+
+			.omb_login .omb_loginOr {
+				position: relative;
+				font-size: 1.5em;
+				color: #aaa;
+				margin-top: 1em;
+				margin-bottom: 1em;
+				padding-top: 0.5em;
+				padding-bottom: 0.5em;
+			}
+			.omb_login .omb_loginOr .omb_hrOr {
+				background-color: #cdcdcd;
+				height: 1px;
+				margin-top: 0px !important;
+				margin-bottom: 0px !important;
+			}
+			.omb_login .omb_loginOr .omb_spanOr {
+				display: block;
+				position: absolute;
+				left: 50%;
+				top: -0.6em;
+				margin-left: -1.5em;
+				background-color: white;
+				width: 3em;
+				text-align: center;
+			}			
+
+			.omb_login .omb_loginForm .input-group.i {
+				width: 2em;
+			}
+			.omb_login .omb_loginForm  .help-block {
+				color: red;
+			}
+
+
+			@media (min-width: 768px) {
+				.omb_login .omb_forgotPwd {
+					text-align: right;
+					margin-top:10px;
+				}		
+			}
+
+			#whatsapp{
+				position:fixed;
+				width:60px;
+				height:60px;
+				right:10px;
+				bottom:10px;
+				display:block;
+				z-index:1000000;
+			}
+			.cart-count{
+				display: inline-block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				background: #ff2646;
+				color: #fff;
+				padding: 4px 10px;
+				border-radius: 100px;
+				font-size: 10px;
+				text-shadow: 0 1px 2px rgba(0,0,0,.1);
+				box-shadow: 0 2px 4px rgba(0,0,0,.1);
+				z-index: 10;
+				text-align: center;
+				opacity: 1;
+				transition: .33s cubic-bezier(0.34, 0.13, 0.34, 1.43);
+			}
+
+			/*--thank you pop starts here--*/
+			.thank-you-pop{
+				width:100%;
+				padding:20px;
+				text-align:center;
+			}
+			.thank-you-pop img{
+				width:76px;
+				height:auto;
+				margin:0 auto;
+				display:block;
+				margin-bottom:25px;
+			}
+
+			.thank-you-pop h1{
+				font-size: 42px;
+				margin-bottom: 25px;
+				color:#5C5C5C;
+			}
+			.thank-you-pop p{
+				font-size: 20px;
+				margin-bottom: 27px;
+				color:#5C5C5C;
+			}
+			.thank-you-pop h3.cupon-pop{
+				font-size: 25px;
+				margin-bottom: 40px;
+				color:#222;
+				display:inline-block;
+				text-align:center;
+				padding:10px 20px;
+				border:2px dashed #222;
+				clear:both;
+				font-weight:normal;
+			}
+			.thank-you-pop h3.cupon-pop span{
+				color:#03A9F4;
+			}
+			.thank-you-pop a{
+				display: inline-block;
+				margin: 0 auto;
+				padding: 9px 20px;
+				color: #fff;
+				text-transform: uppercase;
+				font-size: 14px;
+				background-color: #8BC34A;
+				border-radius: 17px;
+			}
+			.thank-you-pop a i{
+				margin-right:5px;
+				color:#fff;
+			}
+			#ignismyModal .modal-header{
+				border:0px;
+			}
+			/*--thank you pop ends here--*/
+
+			#img-head-loja{
+				background-image:url(https://receitasrapidas.org/wp-content/webp-express/webp-images/uploads/2023/03/Acaraje-de-Camarao-1-1024x683-1.jpg.webp);
+				background-attachment:fixed;
+				background-size:100%;
+				background-repeat:no-repeat;
+				background-color:#000;
+			}
+		</style>
+
+		<style type="text/css">
+
+			.switch {
+				position: relative;
+				margin: 5px auto;
+				width: 95%;
+				height: 40px;
+				border: 3px solid #34AF23;
+				color: #ffffff;
+				font-size: 15px;
+				border-radius: 10px;
+			}
+
+			.quality {
+				position: relative;
+				display: inline-block;
+				width: 50%;
+				height: 100%;
+				line-height: 40px;
+			}
+			.quality:first-child label {
+				border-radius: 5px 0 0 5px;
+			}
+			.quality:last-child label {
+				border-radius: 0 5px 5px 0;
+			}
+			.quality label {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				cursor: pointer;
+				font-style: italic;
+				text-align: center;
+				transition: transform 0.4s, color 0.4s, background-color 0.4s;
+			}
+			.quality input[type="radio"] {
+				appearance: none;
+				width: 0;
+				height: 0;
+				opacity: 0;
+			}
+			.quality input[type="radio"]:focus {
+				outline: 0;
+				outline-offset: 0;
+			}
+			.quality input[type="radio"]:checked ~ label {
+				background-color: #34AF23;
+				color: #ffffff;
+			}
+			.quality input[type="radio"]:active ~ label {
+				transform: scale(1.05);
+			}
+		</style>
+
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css'>
+
+		<!-- Radio and check inputs -->
+		<link href="https://cardapiozap.app.br/css/skins/square/grey.css" rel="stylesheet">
+		
+		
+		<link rel="stylesheet" type="text/css" href="https://cardapiozap.app.br/css/modal/frappuccino-modal.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="https://cardapiozap.app.br/css/modal/popupmodal.css" />
+
+		<script src="https://cardapiozap.app.br/js/jquery-2.2.4.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+		<script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+
+		<!--https://gao-sun.github.io/x0popup/-->
+		<link href="https://cardapiozap.app.br/css/x0popup-master/dist/x0popup.min.css" rel="stylesheet">
+		<script src="https://cardapiozap.app.br/css/x0popup-master/dist/x0popup.min.js"></script>
+
+		<script src="https://cardapiozap.app.br/js/jquery.gotop.js"></script>
+		<script type="text/javascript">	
+
+			$(document).ready(function () {
+
+				$.getJSON('https://cardapiozap.app.br/estados_cidades.json', function (data) {
+
+					var items = [];
+					var options = "<option value='RO'>RO</option>";	
+
+					$.each(data, function (key, val) {
+						options += '<option value="' + val.sigla + '">' + val.sigla + '</option>';
+					});					
+					$("#estados").html(options);				
+
+					$("#estados").change(function () {				
+
+						var options_cidades = "<option value='Porto Velho'>Porto Velho</option>";
+						var str = "";					
+
+						$("#estados option:selected").each(function () {
+							str += $(this).text();
+						});
+
+						$.each(data, function (key, val) {
+							if(val.sigla == str) {							
+								$.each(val.cidades, function (key_city, val_city) {
+									options_cidades += '<option value="' + val_city + '">' + val_city + '</option>';
+								});							
+							}
+						});
+
+						$("#cidades").html(options_cidades);
+
+					}).change();		
+
+				});
+
+			});
+
+		</script>
+
+		<script type="text/javascript">	
+
+			$(document).ready(function () {
+
+				$.getJSON('https://cardapiozap.app.br/estados_cidades.json', function (data) {
+
+					var items = [];
+					var options = '<option value="">Selecione o Estado</option>';	
+
+					$.each(data, function (key, val) {
+						options += '<option value="' + val.sigla + '">' + val.sigla + '</option>';
+					});					
+					$("#estados2").html(options);				
+
+					$("#estados2").change(function () {				
+
+						var options_cidades = '';
+						var str = "";					
+
+						$("#estados2 option:selected").each(function () {
+							str += $(this).text();
+						});
+
+						$.each(data, function (key, val) {
+							if(val.sigla == str) {							
+								$.each(val.cidades, function (key_city, val_city) {
+									options_cidades += '<option value="' + val_city + '">' + val_city + '</option>';
+								});							
+							}
+						});
+
+						$("#cidades2").html(options_cidades);
+
+					}).change();		
+
+				});
+
+			});
+
+		</script>
+		<script src="https://cardapiozap.app.br/js/player.js"></script>
+		<script src="https://cardapiozap.app.br/js/howler.js"></script>
+
+		<link href="https://cardapiozap.app.br/notificacao/light-theme.min.css" rel="stylesheet">
+		<script type="text/javascript" src="https://cardapiozap.app.br/notificacao/growl-notification.min.js"></script> 
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JNKKKK/MoreToggles.css@0.2.1/output/moretoggles.min.css">
+
+		<!-- Select da pagina carrinho -->
+		<link href="https://cardapiozap.app.br/css/selectcarrinho/dist/css/select2.min.css" rel="stylesheet" />
+		<script src="https://cardapiozap.app.br/css/selectcarrinho/dist/js/select2.min.js"></script>
+		<!-- Select da pagina carrinho -->
+
+		<!-- Radio and check inputs -->
+		<link href="https://cardapiozap.app.br/css/radio-check.css" rel="stylesheet">
+		<link href="https://cardapiozap.app.br/css/modal.css" rel="stylesheet">
+		<script type="text/javascript" src="https://cardapiozap.app.br/js/modalhorarios.js"></script> 
+		<!-- https://www.cssscript.com/pure-css-checkbox-radio-button-replacement-bootstrap-icheck/ -->
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+		<link href="https://cardapiozap.app.br/css/chackbox/dist/css/checkboxes.css" rel="stylesheet">
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.remove_item').click(function(){
+					$('.remove_item').prop('disabled', true);
+
+					var id_item = $(this).data('id_item');
+					var rash_item = $(this).data('item_hash');
+
+					$.ajax({
+						url: 'https://cardapiozap.app.br/includes/processaremovercart.php',
+						method: 'post',
+						data: {'iditem':id_item,'itemrash':rash_item, 'getpegaloja' : 'lojateste'},
+
+						success: function(data){
+							$('.remove_item').prop('disabled', false);
+							$('#updatesidebar').html(data);
+						}
+					});
+				});
+			});
+		</script>
+
+		<script src="https://cardapiozap.app.br/css/multiselect/dist/bundle.min.js"></script>
+
+		<!-- MUDAR CORES DO TEMPLATE -->
+		<link href="https://cardapiozap.app.br/css/color_scheme.css" rel="stylesheet"> 
+	</head>
+
+	<body style="background: #e5ddd5 url(https://cardapiozap.app.br/img/body-bg.jpg) repeat center;">
+		<!-- inicio do loader 
+		<div id="preloader">
+			<div class="sk-spinner sk-spinner-wave" id="status">
+				<div class="sk-rect1"></div>
+				<div class="sk-rect2"></div>
+				<div class="sk-rect3"></div>
+				<div class="sk-rect4"></div>
+				<div class="sk-rect5"></div>
+			</div>
+		</div> -->
+<!--[if lte IE 8]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.</p>
+<![endif]-->
+
+<!-- Header ================================================== -->
+<header >
+<!--<header >-->
+	
+	<div class="container-fluid">
+		<div class="row">			
+			<div class="col--md-4 col-sm-4 col-xs-4">
+				<a href="https://cardapiozap.app.br/lojateste" id="logo">
+					<img src="https://cardapiozap.app.br/img/home.png" height="30" width="40" alt="" data-retina="true" class="hidden-xs">
+					<img src="https://cardapiozap.app.br/img/home.png" height="30" width="40" alt="" data-retina="true" class="hidden-lg hidden-md hidden-sm">
+				</a>
+			</div>
+			<nav class="col--md-8 col-sm-8 col-xs-8">
+				<a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
+				<div class="main-menu">
+					<div id="header_menu">
+						<img src="https://cardapiozap.app.br/img/home.png" height="40" alt="" data-retina="true">
+
+					</div>
+					<a class="open_close" id="close_in"><i class="icon_close"></i></a>
+					<ul>
+						<li><a href="https://cardapiozap.app.br/lojateste">Minha Loja</a></li>
+												
+											</ul>
+				</div><!-- End main-menu -->
+			</nav>
+		</div><!-- End row -->
+	</div><!-- End container -->
+</header>
+<!-- End Header =============================================== -->
+
+<!-- SubHeader =============================================== -->
+
+	<section id="img-head-loja">
+							<div id="subheader">
+					<div id="sub_content">
+
+						<div id="thumb"><img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/uploads/images/2020/12/logomarca-cardapiozap.jpg&w=240&h=240" alt="Logo" title="Logo"/></div>						<h1>Loja Teste</h1>
+
+						<b style="border: 2px solid #86c953;background-color:#86c953;color:#ffffff;font-size:15px;font-weight:bold;border-radius:5px;">ABERTO AGORA</b><br />
+<br />
+<a data-toggle="modal" data-target=".bd-example-modal-sm" style="color: #ffffff;font-size: 14px;cursor: pointer; text-decoration: none;"><i class="icon-clock-circled"></i> Ver Hor�rios <i class="fa fa-chevron-down arrow-down"></i></a>
+
+
+&nbsp;&nbsp;
+
+<a data-toggle="modal" data-target=".modal-horarios" style="color: #ffffff;font-size: 14px;cursor: pointer; text-decoration: none;"><i class="icon_pin"></i> Ver Endere�os <i class="fa fa-chevron-down arrow-down"></i></a>
+<br>
+
+<b> 
+                
+                        <output id="hora" style="color:#ffffff;">Horario</output>
+</b>
+
+        <script>
+                function atualizaRelogio(){
+                        var momentoAtual = new Date();
+
+                        var vhora = momentoAtual.getHours();
+                        var vminuto = momentoAtual.getMinutes();
+                        var vsegundo = momentoAtual.getSeconds();
+
+                        var vdia = momentoAtual.getDate();
+                        var vmes = momentoAtual.getMonth() + 1;
+                        var vano = momentoAtual.getFullYear();
+
+                        if (vdia < 10){ vdia = "0" + vdia;}
+                        if (vmes < 10){ vmes = "0" + vmes;}
+                        if (vhora < 10){ vhora = "0" + vhora;}
+                        if (vminuto < 10){ vminuto = "0" + vminuto;}
+                        if (vsegundo < 10){ vsegundo = "0" + vsegundo;}
+
+                        dataFormat = vdia + " / " + vmes + " / " + vano;
+                        horaFormat = vhora + " : " + vminuto + " : " + vsegundo;
+
+                        //document.getElementById("data").innerHTML = dataFormat;
+                        document.getElementById("hora").innerHTML = horaFormat;
+
+                        setTimeout("atualizaRelogio()",1000);
+                }
+        </script>
+
+</div><!-- End sub_content -->
+</div><!-- End subheader -->
+</section><!-- End section -->
+
+
+<!-- End SubHeader ============================================ -->
+
+<div id="position" style="display: none;">
+	<div class="container">
+
+		??	<b style="color: red;">Bem-vindo(a)! Obrigado pela prefer�ncia...</b>
+
+	</div>				
+</div><!-- Position -->
+
+<!-- Content ================================================== -->
+<div class="container margin_60_35">
+					
+
+	<script type="text/javascript">
+
+		$.ajax({
+			url: 'https://cardapiozap.app.br/includes/processaviews.php',
+			method: 'post',
+			data: {'maisum' : '1', 'userid' : '1'},	
+			success: function(data){		
+			}		
+		});
+
+	</script>
+	
+
+<style type="text/css">
+
+	#div-img-fome{
+		margin: 0 auto;
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#img-fome {
+		max-width:250px;
+		max-height:200px;
+		width: auto;
+		height: auto;
+	}
+
+	#footer
+	{
+		background-color:#d9534f;
+		position:fixed;
+		bottom:0px;
+		left:0px;
+		right:0px;
+		height:50px;
+		margin-bottom:0px;
+		text-align:center;
+		text-decoration: none;
+		color: #ffffff;
+		width: 100%;
+		font-weight: bold;
+		cursor: pointer;
+		padding-top: 15px;
+
+	}
+	#footer:hover{
+		background-color:#00a000;
+	}
+
+	#footerr
+	{
+		background-color:#ff6247;
+		position:fixed;
+		bottom:0px;
+		left:0px;
+		right:0px;
+		height:50px;
+		margin-bottom:0px;
+		text-align:center;
+		text-decoration: none;
+		color: #ffffff;
+		width: 100%;
+		font-weight: bold;
+		cursor: pointer;
+		padding-top: 15px;
+
+	}
+	#footerr:hover{
+		background-color:#d9534f;
+	}
+</style>
+
+<div class="row">	
+	<!-- INICIO DA DIV CATEGORIAS & COMPARTILHAR -->
+	<div class="col-md-3">	
+		<!-- INICIO DA BOX CATEGORIAS --> 
+		<div class="box_style_1 hidden-xs">
+			<ul id="cat_nav">
+    		        		    
+                <li><a href="#sanduiches1">
+                    
+        		<img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/img/grill.png&w=30&h=30" alt="icone-categoria" title="icone-categoria"/>    				
+    			&nbsp;SANDUICHES 
+    				
+    						    
+			    <span>(6)</span></a>
+				</li>
+
+				    		    
+                <li><a href="#hotdog2">
+                    
+        		<img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/img/hot-dog.png&w=30&h=30" alt="icone-categoria" title="icone-categoria"/>    				
+    			&nbsp;HOTDOG 
+    				
+    						    
+			    <span>(3)</span></a>
+				</li>
+
+				    		    
+                <li><a href="#porcoes3">
+                    
+        		<img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/img/coxasfrango.png&w=30&h=30" alt="icone-categoria" title="icone-categoria"/>    				
+    			&nbsp;POR��ES 
+    				
+    						    
+			    <span>(4)</span></a>
+				</li>
+
+				    		    
+                <li><a href="#refrigerantes4">
+                    
+        		<img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/img/refrigerantes.png&w=30&h=30" alt="icone-categoria" title="icone-categoria"/>    				
+    			&nbsp;REFRIGERANTES 
+    				
+    						    
+			    <span>(3)</span></a>
+				</li>
+
+				    		    
+                <li><a href="#sucos5">
+                    
+        		<img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/img/lemonade.png&w=30&h=30" alt="icone-categoria" title="icone-categoria"/>    				
+    			&nbsp;SUCOS 
+    				
+    						    
+			    <span>(2)</span></a>
+				</li>
+
+				    		    
+                <li><a href="#combos6">
+                    
+        		<img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/img/combohamburgue.png&w=30&h=30" alt="icone-categoria" title="icone-categoria"/>    				
+    			&nbsp;COMBOS 
+    				
+    						    
+			    <span>(1)</span></a>
+				</li>
+
+				    		    
+                <li><a href="#queijo7">
+                    
+        		<img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/img/queijo.png&w=30&h=30" alt="icone-categoria" title="icone-categoria"/>    				
+    			&nbsp;QUEIJO 
+    				
+    						    
+			    <span>(0)</span></a>
+				</li>
+
+														
+            </ul>
+    </div>
+	    <!-- INICIO DA BOX CATEGORIAS --> 
+	    
+    	<!-- INICIO DA BOX COMPARTILHAR --> 
+    	<div class="box_style_2 hidden-xs" id="help">
+    		<h4>Compartilhe ??</h4>
+    		<div style="margin: 0 auto;align-items: center;display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;" class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="https://cardapiozap.app.br/lojateste"> 		   
+    			<a class="a2a_button_facebook"></a>
+    			<a class="a2a_button_facebook_messenger"></a>
+    			<a class="a2a_button_twitter"></a>
+    			<a class="a2a_button_google_plus"></a>
+    			<a class="a2a_button_whatsapp"></a>
+    			<a class="a2a_button_telegram"></a>
+    		</div>
+    		<script async src="https://static.addtoany.com/menu/page.js"></script>
+    	</div>
+    	<!-- FIM DA BOX COMPARTILHAR -->
+    </div>
+    <!-- FIM DA DIV CATEGORIAS & COMPARTILHAR -->
+    
+    <!-- INICIO DA DIV BANNER PROMOCIONAL & CARDAPIO --> 
+    <div class="col-md-6" >
+    
+        <!-- INICIO DA BOX BANNER --> 
+        <div class="box_style_4" id="banner">
+        	        	</div>
+        <!-- FIM DA BOX BANNER -->
+
+        <!-- INICIO DA BOX NOSSOS PRODUTOS --> 
+        <div class="box_style_2" id="main_menu">
+		<center>
+		    <h2 class="inner">
+		    <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> 
+		    <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> - ITENS ABAIXO - <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>		    <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+		    </h2>
+	    </center> 
+		    
+    <!-- INICIO DA DIV ACORDION DO CARDAPIO --> 
+	<div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
+	    <div class="panel panel-default" id="combos1">
+	            <script type="text/javascript">
+            $(document).on("click", "#mudarsimbolo_6", function(){
+                ifelse if($(this).find("i").hasClass("fa-chevron-up")){
+            $(this).find("i").removeClass("fa-chevron-up").addClass("fa-chevron-down");
+                }else{
+                    $(this).find("i").removeClass("fa-chevron-down").addClass("fa-chevron-up");
+                }
+            });
+        </script>
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a id="mudarsimbolo_6" 
+                aria-hidden="true" 
+                class="accordion-toggle" 
+                data-toggle="collapse" 
+                data-parent="#accordion"
+                href="#combos">
+                    <strong class="nomargin_top">COMBOS</strong>
+                    <i class="fa fa-chevron-down pull-right"></i>
+                </a>
+			</h4>
+		</div>
+		
+		<div id="combos" aria-labelledby="heading1" class="panel-collapse collapse in" id="example1" role="tabpanel">
+		    <div class="panel-body">
+		        Aproveite as melhores promo��es em nossos combos.<br />		        				<table class="table table-striped cart-list">
+				    <thead>
+				        <tr>
+				            <th>
+				            </th>
+				        </tr>
+				    </thead>
+				<tbody>
+				
+								
+				<tr>
+				    <td data-toggle="modal" data-target="#popuppedido_19">
+				<figure class="thumb_menu_list"><img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/uploads/images/2020/01/combo.png&w=180&h=180" alt="Imagem-item" title="Imagem-item"/></figure>				<h5 style="margin-top: 3px;">Sanduiche + Batata + Refri</h5>
+				<p> Sanduiche com p�o brioche, burger 120g assado na brasa, queijo cheddar, bacon, alface, picles de pepino e maionese da casa + Batata pequena + Refrigerante lata 300ml. </p>
+				
+				<strong style="float: right;">
+				<b style='cursor:pointer;'>R$ 20,00</b>				</strong>
+					</td>
+					
+					<form id="addItemPost_19" name="addItemPost_19" method="post">
+					<td class="options">
+					    <div class="dropdown dropdown-options">
+					    
+					    <!-- Modal -->
+					    <div style="margin-top: 10px;" class="modal fade popuppedido" id="popuppedido_19" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					    <div class="modal-content">
+					    <div class="modal-body">
+						<div class="dropdown-menupop" style="border-bottom: none;">
+						<a data-dismiss="modal" style="float: right;cursor: pointer;"id="fecharmodallogin" class="close-link"><i class="icon_close_alt2"></i></a>
+						
+						<center><b>Sanduiche + Batata + Refri    						<br /><b style='color: #4eb93e;'>R$ 20,00</b>						</b></center>
+						
+						<center>
+						    <br /><img width="70%" height="" src="https://cardapiozap.app.br/uploads/images/2020/01/combo.png" /><br /><br />					    </center>
+						    
+						    <input type="hidden" name="valor" value="20.00">		
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais19 input[type=checkbox]').change(function(){
+			var maximopermitidoo = 5;
+			var controlee = $('#cf_group_adicionais19 input[type=checkbox]:checked').length;
+
+			if(controlee > maximopermitidoo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>	
+
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+
+
+	
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais_pagos19 input[type=checkbox]').change(function(){
+			var maximopermitidooo = 1000;
+			var controleee = $('#cf_group_adicionais_pagos19 input[type=checkbox]:checked').length;
+
+			if(controleee > maximopermitidooo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais2').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais2').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>
+
+
+		
+
+
+<!--INICIO DA QUANTIDADE-->
+<h5>Quantidade</h5>							
+<div class="input-group">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quantidade">
+			<span class="glyphicon glyphicon-minus"></span>
+		</button>
+	</span>
+	<input style="height: 34px;" type="text" name="quantidade" class="form-control input-number qtdpedido" value="1" min="1" max="100">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-success btn-number" data-type="plus" data-field="quantidade">
+			<span class="glyphicon glyphicon-plus"></span>
+		</button>
+	</span>
+</div>
+<!--FIM DA QUANTIDADE-->
+<br />
+	<textarea class="form-control obsitem" rows="3" placeholder="Alguma observa��o p/ este pedido?" name="observacao"></textarea>
+	
+<input type="hidden" name="id-item" value="19">
+<input type="hidden" name="add-Item" value="true">
+<input type="hidden" name="userid" value="1">
+<input type="hidden" name="nome_item" value="Sanduiche + Batata + Refri">
+<input type="hidden" name="nomeloja" value="lojateste">
+<br />
+
+
+</div>
+<div class="modal-footer">
+	<center><button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar janela</button></center>
+	<br>
+	<br>
+	<br>
+</div>
+</div>
+
+</div>
+
+</div>
+	
+	<a class="adicionarItemPedido_19">
+		<div id="footer">
+			<b>ADICIONAR AO PEDIDO</b>
+		</div>
+	</a>
+
+	
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.adicionarItemPedido_19').click(function(){
+			$.ajax({
+				url: 'https://cardapiozap.app.br/includes/processaAddItem.php',
+				method: "post",
+				data: $('#addItemPost_19').serialize(),
+
+				success: function(data){				
+					$('#resultadoAddItem').html(data);					
+					$('.qtdpedido').val('1');
+				}
+			});
+
+		}); 
+	});
+</script>
+
+</div>
+</div>
+</div>
+
+</div>
+</td>
+</form>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+</div>
+
+    
+    <!-- INICIO DA DIV ACORDION DO CARDAPIO --> 
+	<div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
+	    <div class="panel panel-default" id="hotdog2">
+	            <script type="text/javascript">
+            $(document).on("click", "#mudarsimbolo_2", function(){
+                ifelse if($(this).find("i").hasClass("fa-chevron-up")){
+            $(this).find("i").removeClass("fa-chevron-up").addClass("fa-chevron-down");
+                }else{
+                    $(this).find("i").removeClass("fa-chevron-down").addClass("fa-chevron-up");
+                }
+            });
+        </script>
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a id="mudarsimbolo_2" 
+                aria-hidden="true" 
+                class="accordion-toggle" 
+                data-toggle="collapse" 
+                data-parent="#accordion"
+                href="#hotdog">
+                    <strong class="nomargin_top">HOTDOG</strong>
+                    <i class="fa fa-chevron-down pull-right"></i>
+                </a>
+			</h4>
+		</div>
+		
+		<div id="hotdog" aria-labelledby="heading1" class="panel-collapse collapse in" id="example1" role="tabpanel">
+		    <div class="panel-body">
+		        HotDogs tradicionais, artesanais e especiais escolha o seu.<br />		        				<table class="table table-striped cart-list">
+				    <thead>
+				        <tr>
+				            <th>
+				            </th>
+				        </tr>
+				    </thead>
+				<tbody>
+				
+								
+				<tr>
+				    <td data-toggle="modal" data-target="#popuppedido_8">
+				<figure class="thumb_menu_list"><img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/uploads/images/2020/01/hotdogcheddar.jpg&w=180&h=180" alt="Imagem-item" title="Imagem-item"/></figure>				<h5 style="margin-top: 3px;">Hot Cheddar</h5>
+				<p> P�o, salsicha, molho de tomate, picles de cebola roxa, cheddar da casa e bacon. </p>
+				
+				<strong style="float: right;">
+				<b style='cursor:pointer;'>R$ 9,00</b>				</strong>
+					</td>
+					
+					<form id="addItemPost_8" name="addItemPost_8" method="post">
+					<td class="options">
+					    <div class="dropdown dropdown-options">
+					    
+					    <!-- Modal -->
+					    <div style="margin-top: 10px;" class="modal fade popuppedido" id="popuppedido_8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					    <div class="modal-content">
+					    <div class="modal-body">
+						<div class="dropdown-menupop" style="border-bottom: none;">
+						<a data-dismiss="modal" style="float: right;cursor: pointer;"id="fecharmodallogin" class="close-link"><i class="icon_close_alt2"></i></a>
+						
+						<center><b>Hot Cheddar    						<br /><b style='color: #4eb93e;'>R$ 9,00</b>						</b></center>
+						
+						<center>
+						    <br /><img width="70%" height="" src="https://cardapiozap.app.br/uploads/images/2020/01/hotdogcheddar.jpg" /><br /><br />					    </center>
+						    
+						    <input type="hidden" name="valor" value="9.00">		
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais8 input[type=checkbox]').change(function(){
+			var maximopermitidoo = 3;
+			var controlee = $('#cf_group_adicionais8 input[type=checkbox]:checked').length;
+
+			if(controlee > maximopermitidoo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>	
+
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+
+
+	
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais_pagos8 input[type=checkbox]').change(function(){
+			var maximopermitidooo = 1000;
+			var controleee = $('#cf_group_adicionais_pagos8 input[type=checkbox]:checked').length;
+
+			if(controleee > maximopermitidooo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais2').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais2').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>
+
+
+		
+
+
+<!--INICIO DA QUANTIDADE-->
+<h5>Quantidade</h5>							
+<div class="input-group">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quantidade">
+			<span class="glyphicon glyphicon-minus"></span>
+		</button>
+	</span>
+	<input style="height: 34px;" type="text" name="quantidade" class="form-control input-number qtdpedido" value="1" min="1" max="100">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-success btn-number" data-type="plus" data-field="quantidade">
+			<span class="glyphicon glyphicon-plus"></span>
+		</button>
+	</span>
+</div>
+<!--FIM DA QUANTIDADE-->
+<br />
+	<textarea class="form-control obsitem" rows="3" placeholder="Alguma observa��o p/ este pedido?" name="observacao"></textarea>
+	
+<input type="hidden" name="id-item" value="8">
+<input type="hidden" name="add-Item" value="true">
+<input type="hidden" name="userid" value="1">
+<input type="hidden" name="nome_item" value="Hot Cheddar">
+<input type="hidden" name="nomeloja" value="lojateste">
+<br />
+
+
+</div>
+<div class="modal-footer">
+	<center><button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar janela</button></center>
+	<br>
+	<br>
+	<br>
+</div>
+</div>
+
+</div>
+
+</div>
+	
+	<a class="adicionarItemPedido_8">
+		<div id="footer">
+			<b>ADICIONAR AO PEDIDO</b>
+		</div>
+	</a>
+
+	
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.adicionarItemPedido_8').click(function(){
+			$.ajax({
+				url: 'https://cardapiozap.app.br/includes/processaAddItem.php',
+				method: "post",
+				data: $('#addItemPost_8').serialize(),
+
+				success: function(data){				
+					$('#resultadoAddItem').html(data);					
+					$('.qtdpedido').val('1');
+				}
+			});
+
+		}); 
+	});
+</script>
+
+</div>
+</div>
+</div>
+
+</div>
+</td>
+</form>
+</tr>
+				
+				<tr>
+				    <td data-toggle="modal" data-target="#popuppedido_9">
+				<figure class="thumb_menu_list"><img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/uploads/images/2020/01/hotdogclassic.jpg&w=180&h=180" alt="Imagem-item" title="Imagem-item"/></figure>				<h5 style="margin-top: 3px;">Hot Classic</h5>
+				<p> P�o, salsicha, molho de tomate, picles de pepino, bacon, queijo, mostarda e ketchup. </p>
+				
+				<strong style="float: right;">
+				<b style='cursor:pointer;'>R$ 9,00</b>				</strong>
+					</td>
+					
+					<form id="addItemPost_9" name="addItemPost_9" method="post">
+					<td class="options">
+					    <div class="dropdown dropdown-options">
+					    
+					    <!-- Modal -->
+					    <div style="margin-top: 10px;" class="modal fade popuppedido" id="popuppedido_9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					    <div class="modal-content">
+					    <div class="modal-body">
+						<div class="dropdown-menupop" style="border-bottom: none;">
+						<a data-dismiss="modal" style="float: right;cursor: pointer;"id="fecharmodallogin" class="close-link"><i class="icon_close_alt2"></i></a>
+						
+						<center><b>Hot Classic    						<br /><b style='color: #4eb93e;'>R$ 9,00</b>						</b></center>
+						
+						<center>
+						    <br /><img width="70%" height="" src="https://cardapiozap.app.br/uploads/images/2020/01/hotdogclassic.jpg" /><br /><br />					    </center>
+						    
+						    <input type="hidden" name="valor" value="9.00">		
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais9 input[type=checkbox]').change(function(){
+			var maximopermitidoo = 3;
+			var controlee = $('#cf_group_adicionais9 input[type=checkbox]:checked').length;
+
+			if(controlee > maximopermitidoo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>	
+
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+
+
+	
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais_pagos9 input[type=checkbox]').change(function(){
+			var maximopermitidooo = 1000;
+			var controleee = $('#cf_group_adicionais_pagos9 input[type=checkbox]:checked').length;
+
+			if(controleee > maximopermitidooo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais2').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais2').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>
+
+
+		
+
+
+<!--INICIO DA QUANTIDADE-->
+<h5>Quantidade</h5>							
+<div class="input-group">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quantidade">
+			<span class="glyphicon glyphicon-minus"></span>
+		</button>
+	</span>
+	<input style="height: 34px;" type="text" name="quantidade" class="form-control input-number qtdpedido" value="1" min="1" max="100">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-success btn-number" data-type="plus" data-field="quantidade">
+			<span class="glyphicon glyphicon-plus"></span>
+		</button>
+	</span>
+</div>
+<!--FIM DA QUANTIDADE-->
+<br />
+	<textarea class="form-control obsitem" rows="3" placeholder="Alguma observa��o p/ este pedido?" name="observacao"></textarea>
+	
+<input type="hidden" name="id-item" value="9">
+<input type="hidden" name="add-Item" value="true">
+<input type="hidden" name="userid" value="1">
+<input type="hidden" name="nome_item" value="Hot Classic">
+<input type="hidden" name="nomeloja" value="lojateste">
+<br />
+
+
+</div>
+<div class="modal-footer">
+	<center><button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar janela</button></center>
+	<br>
+	<br>
+	<br>
+</div>
+</div>
+
+</div>
+
+</div>
+	
+	<a class="adicionarItemPedido_9">
+		<div id="footer">
+			<b>ADICIONAR AO PEDIDO</b>
+		</div>
+	</a>
+
+	
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.adicionarItemPedido_9').click(function(){
+			$.ajax({
+				url: 'https://cardapiozap.app.br/includes/processaAddItem.php',
+				method: "post",
+				data: $('#addItemPost_9').serialize(),
+
+				success: function(data){				
+					$('#resultadoAddItem').html(data);					
+					$('.qtdpedido').val('1');
+				}
+			});
+
+		}); 
+	});
+</script>
+
+</div>
+</div>
+</div>
+
+</div>
+</td>
+</form>
+</tr>
+				
+				<tr>
+				    <td data-toggle="modal" data-target="#popuppedido_7">
+				<figure class="thumb_menu_list"><img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/uploads/images/2020/01/hotdogsertao.jpg&w=180&h=180" alt="Imagem-item" title="Imagem-item"/></figure>				<h5 style="margin-top: 3px;">Hot Sert�o</h5>
+				<p> P�o, salsicha, pur� de ab�bora e cane seca. </p>
+				
+				<strong style="float: right;">
+				<b style='cursor:pointer;'>R$ 9,00</b>				</strong>
+					</td>
+					
+					<form id="addItemPost_7" name="addItemPost_7" method="post">
+					<td class="options">
+					    <div class="dropdown dropdown-options">
+					    
+					    <!-- Modal -->
+					    <div style="margin-top: 10px;" class="modal fade popuppedido" id="popuppedido_7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					    <div class="modal-content">
+					    <div class="modal-body">
+						<div class="dropdown-menupop" style="border-bottom: none;">
+						<a data-dismiss="modal" style="float: right;cursor: pointer;"id="fecharmodallogin" class="close-link"><i class="icon_close_alt2"></i></a>
+						
+						<center><b>Hot Sert�o    						<br /><b style='color: #4eb93e;'>R$ 9,00</b>						</b></center>
+						
+						<center>
+						    <br /><img width="70%" height="" src="https://cardapiozap.app.br/uploads/images/2020/01/hotdogsertao.jpg" /><br /><br />					    </center>
+						    
+						    <input type="hidden" name="valor" value="9.00">		
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais7 input[type=checkbox]').change(function(){
+			var maximopermitidoo = 3;
+			var controlee = $('#cf_group_adicionais7 input[type=checkbox]:checked').length;
+
+			if(controlee > maximopermitidoo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>	
+
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+
+
+	
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais_pagos7 input[type=checkbox]').change(function(){
+			var maximopermitidooo = 1000;
+			var controleee = $('#cf_group_adicionais_pagos7 input[type=checkbox]:checked').length;
+
+			if(controleee > maximopermitidooo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais2').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais2').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>
+
+
+		
+
+
+<!--INICIO DA QUANTIDADE-->
+<h5>Quantidade</h5>							
+<div class="input-group">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quantidade">
+			<span class="glyphicon glyphicon-minus"></span>
+		</button>
+	</span>
+	<input style="height: 34px;" type="text" name="quantidade" class="form-control input-number qtdpedido" value="1" min="1" max="100">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-success btn-number" data-type="plus" data-field="quantidade">
+			<span class="glyphicon glyphicon-plus"></span>
+		</button>
+	</span>
+</div>
+<!--FIM DA QUANTIDADE-->
+<br />
+	<textarea class="form-control obsitem" rows="3" placeholder="Alguma observa��o p/ este pedido?" name="observacao"></textarea>
+	
+<input type="hidden" name="id-item" value="7">
+<input type="hidden" name="add-Item" value="true">
+<input type="hidden" name="userid" value="1">
+<input type="hidden" name="nome_item" value="Hot Sert�o">
+<input type="hidden" name="nomeloja" value="lojateste">
+<br />
+
+
+</div>
+<div class="modal-footer">
+	<center><button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar janela</button></center>
+	<br>
+	<br>
+	<br>
+</div>
+</div>
+
+</div>
+
+</div>
+	
+	<a class="adicionarItemPedido_7">
+		<div id="footer">
+			<b>ADICIONAR AO PEDIDO</b>
+		</div>
+	</a>
+
+	
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.adicionarItemPedido_7').click(function(){
+			$.ajax({
+				url: 'https://cardapiozap.app.br/includes/processaAddItem.php',
+				method: "post",
+				data: $('#addItemPost_7').serialize(),
+
+				success: function(data){				
+					$('#resultadoAddItem').html(data);					
+					$('.qtdpedido').val('1');
+				}
+			});
+
+		}); 
+	});
+</script>
+
+</div>
+</div>
+</div>
+
+</div>
+</td>
+</form>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+</div>
+
+    
+    <!-- INICIO DA DIV ACORDION DO CARDAPIO --> 
+	<div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
+	    <div class="panel panel-default" id="porcoes3">
+	            <script type="text/javascript">
+            $(document).on("click", "#mudarsimbolo_3", function(){
+                ifelse if($(this).find("i").hasClass("fa-chevron-up")){
+            $(this).find("i").removeClass("fa-chevron-up").addClass("fa-chevron-down");
+                }else{
+                    $(this).find("i").removeClass("fa-chevron-down").addClass("fa-chevron-up");
+                }
+            });
+        </script>
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a id="mudarsimbolo_3" 
+                aria-hidden="true" 
+                class="accordion-toggle" 
+                data-toggle="collapse" 
+                data-parent="#accordion"
+                href="#porcoes">
+                    <strong class="nomargin_top">POR��ES</strong>
+                    <i class="fa fa-chevron-down pull-right"></i>
+                </a>
+			</h4>
+		</div>
+		
+		<div id="porcoes" aria-labelledby="heading1" class="panel-collapse collapse in" id="example1" role="tabpanel">
+		    <div class="panel-body">
+		        Deliciosas por��es para uma ou mais pessoas selecione a sua.<br />		        				<table class="table table-striped cart-list">
+				    <thead>
+				        <tr>
+				            <th>
+				            </th>
+				        </tr>
+				    </thead>
+				<tbody>
+				
+								
+				<tr>
+				    <td data-toggle="modal" data-target="#popuppedido_13">
+				<figure class="thumb_menu_list"><img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/uploads/images/2020/01/batata-cheddar-e-bacon.jpg&w=180&h=180" alt="Imagem-item" title="Imagem-item"/></figure>				<h5 style="margin-top: 3px;">Batata Especial - Cheddar e Bacon</h5>
+				<p> 400g de batata frita com cheddar e bacon. </p>
+				
+				<strong style="float: right;">
+				<b style='cursor:pointer;'>R$ 22,00</b>				</strong>
+					</td>
+					
+					<form id="addItemPost_13" name="addItemPost_13" method="post">
+					<td class="options">
+					    <div class="dropdown dropdown-options">
+					    
+					    <!-- Modal -->
+					    <div style="margin-top: 10px;" class="modal fade popuppedido" id="popuppedido_13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					    <div class="modal-content">
+					    <div class="modal-body">
+						<div class="dropdown-menupop" style="border-bottom: none;">
+						<a data-dismiss="modal" style="float: right;cursor: pointer;"id="fecharmodallogin" class="close-link"><i class="icon_close_alt2"></i></a>
+						
+						<center><b>Batata Especial - Cheddar e Bacon    						<br /><b style='color: #4eb93e;'>R$ 22,00</b>						</b></center>
+						
+						<center>
+						    <br /><img width="70%" height="" src="https://cardapiozap.app.br/uploads/images/2020/01/batata-cheddar-e-bacon.jpg" /><br /><br />					    </center>
+						    
+						    <input type="hidden" name="valor" value="22.00">		
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais13 input[type=checkbox]').change(function(){
+			var maximopermitidoo = 2;
+			var controlee = $('#cf_group_adicionais13 input[type=checkbox]:checked').length;
+
+			if(controlee > maximopermitidoo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>	
+
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+
+
+	
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais_pagos13 input[type=checkbox]').change(function(){
+			var maximopermitidooo = 1000;
+			var controleee = $('#cf_group_adicionais_pagos13 input[type=checkbox]:checked').length;
+
+			if(controleee > maximopermitidooo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais2').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais2').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>
+
+
+		
+
+
+<!--INICIO DA QUANTIDADE-->
+<h5>Quantidade</h5>							
+<div class="input-group">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quantidade">
+			<span class="glyphicon glyphicon-minus"></span>
+		</button>
+	</span>
+	<input style="height: 34px;" type="text" name="quantidade" class="form-control input-number qtdpedido" value="1" min="1" max="100">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-success btn-number" data-type="plus" data-field="quantidade">
+			<span class="glyphicon glyphicon-plus"></span>
+		</button>
+	</span>
+</div>
+<!--FIM DA QUANTIDADE-->
+<br />
+	<textarea class="form-control obsitem" rows="3" placeholder="Alguma observa��o p/ este pedido?" name="observacao"></textarea>
+	
+<input type="hidden" name="id-item" value="13">
+<input type="hidden" name="add-Item" value="true">
+<input type="hidden" name="userid" value="1">
+<input type="hidden" name="nome_item" value="Batata Especial - Cheddar e Bacon">
+<input type="hidden" name="nomeloja" value="lojateste">
+<br />
+
+
+</div>
+<div class="modal-footer">
+	<center><button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar janela</button></center>
+	<br>
+	<br>
+	<br>
+</div>
+</div>
+
+</div>
+
+</div>
+	
+	<a class="adicionarItemPedido_13">
+		<div id="footer">
+			<b>ADICIONAR AO PEDIDO</b>
+		</div>
+	</a>
+
+	
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.adicionarItemPedido_13').click(function(){
+			$.ajax({
+				url: 'https://cardapiozap.app.br/includes/processaAddItem.php',
+				method: "post",
+				data: $('#addItemPost_13').serialize(),
+
+				success: function(data){				
+					$('#resultadoAddItem').html(data);					
+					$('.qtdpedido').val('1');
+				}
+			});
+
+		}); 
+	});
+</script>
+
+</div>
+</div>
+</div>
+
+</div>
+</td>
+</form>
+</tr>
+				
+				<tr>
+				    <td data-toggle="modal" data-target="#popuppedido_10">
+				<figure class="thumb_menu_list"><img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/uploads/images/2020/01/batata-g.jpg&w=180&h=180" alt="Imagem-item" title="Imagem-item"/></figure>				<h5 style="margin-top: 3px;">Batata frita G</h5>
+				<p> 400g de batata frita </p>
+				
+				<strong style="float: right;">
+				<b style='cursor:pointer;'>R$ 15,00</b>				</strong>
+					</td>
+					
+					<form id="addItemPost_10" name="addItemPost_10" method="post">
+					<td class="options">
+					    <div class="dropdown dropdown-options">
+					    
+					    <!-- Modal -->
+					    <div style="margin-top: 10px;" class="modal fade popuppedido" id="popuppedido_10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					    <div class="modal-content">
+					    <div class="modal-body">
+						<div class="dropdown-menupop" style="border-bottom: none;">
+						<a data-dismiss="modal" style="float: right;cursor: pointer;"id="fecharmodallogin" class="close-link"><i class="icon_close_alt2"></i></a>
+						
+						<center><b>Batata frita G    						<br /><b style='color: #4eb93e;'>R$ 15,00</b>						</b></center>
+						
+						<center>
+						    <br /><img width="70%" height="" src="https://cardapiozap.app.br/uploads/images/2020/01/batata-g.jpg" /><br /><br />					    </center>
+						    
+						    <input type="hidden" name="valor" value="15.00">		
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais10 input[type=checkbox]').change(function(){
+			var maximopermitidoo = 2;
+			var controlee = $('#cf_group_adicionais10 input[type=checkbox]:checked').length;
+
+			if(controlee > maximopermitidoo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>	
+
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+
+
+	
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais_pagos10 input[type=checkbox]').change(function(){
+			var maximopermitidooo = 1000;
+			var controleee = $('#cf_group_adicionais_pagos10 input[type=checkbox]:checked').length;
+
+			if(controleee > maximopermitidooo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais2').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais2').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>
+
+
+		
+
+
+<!--INICIO DA QUANTIDADE-->
+<h5>Quantidade</h5>							
+<div class="input-group">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quantidade">
+			<span class="glyphicon glyphicon-minus"></span>
+		</button>
+	</span>
+	<input style="height: 34px;" type="text" name="quantidade" class="form-control input-number qtdpedido" value="1" min="1" max="100">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-success btn-number" data-type="plus" data-field="quantidade">
+			<span class="glyphicon glyphicon-plus"></span>
+		</button>
+	</span>
+</div>
+<!--FIM DA QUANTIDADE-->
+<br />
+	<textarea class="form-control obsitem" rows="3" placeholder="Alguma observa��o p/ este pedido?" name="observacao"></textarea>
+	
+<input type="hidden" name="id-item" value="10">
+<input type="hidden" name="add-Item" value="true">
+<input type="hidden" name="userid" value="1">
+<input type="hidden" name="nome_item" value="Batata frita G">
+<input type="hidden" name="nomeloja" value="lojateste">
+<br />
+
+
+</div>
+<div class="modal-footer">
+	<center><button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar janela</button></center>
+	<br>
+	<br>
+	<br>
+</div>
+</div>
+
+</div>
+
+</div>
+	
+	<a class="adicionarItemPedido_10">
+		<div id="footer">
+			<b>ADICIONAR AO PEDIDO</b>
+		</div>
+	</a>
+
+	
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.adicionarItemPedido_10').click(function(){
+			$.ajax({
+				url: 'https://cardapiozap.app.br/includes/processaAddItem.php',
+				method: "post",
+				data: $('#addItemPost_10').serialize(),
+
+				success: function(data){				
+					$('#resultadoAddItem').html(data);					
+					$('.qtdpedido').val('1');
+				}
+			});
+
+		}); 
+	});
+</script>
+
+</div>
+</div>
+</div>
+
+</div>
+</td>
+</form>
+</tr>
+				
+				<tr>
+				    <td data-toggle="modal" data-target="#popuppedido_11">
+				<figure class="thumb_menu_list"><img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/uploads/images/2020/01/batata-p.jpg&w=180&h=180" alt="Imagem-item" title="Imagem-item"/></figure>				<h5 style="margin-top: 3px;">Batata frita P</h5>
+				<p> 100g de batata frita. </p>
+				
+				<strong style="float: right;">
+				<b style='cursor:pointer;'>R$ 5,00</b>				</strong>
+					</td>
+					
+					<form id="addItemPost_11" name="addItemPost_11" method="post">
+					<td class="options">
+					    <div class="dropdown dropdown-options">
+					    
+					    <!-- Modal -->
+					    <div style="margin-top: 10px;" class="modal fade popuppedido" id="popuppedido_11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					    <div class="modal-content">
+					    <div class="modal-body">
+						<div class="dropdown-menupop" style="border-bottom: none;">
+						<a data-dismiss="modal" style="float: right;cursor: pointer;"id="fecharmodallogin" class="close-link"><i class="icon_close_alt2"></i></a>
+						
+						<center><b>Batata frita P    						<br /><b style='color: #4eb93e;'>R$ 5,00</b>						</b></center>
+						
+						<center>
+						    <br /><img width="70%" height="" src="https://cardapiozap.app.br/uploads/images/2020/01/batata-p.jpg" /><br /><br />					    </center>
+						    
+						    <input type="hidden" name="valor" value="5.00">		
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais11 input[type=checkbox]').change(function(){
+			var maximopermitidoo = 2;
+			var controlee = $('#cf_group_adicionais11 input[type=checkbox]:checked').length;
+
+			if(controlee > maximopermitidoo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>	
+
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+
+
+	
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais_pagos11 input[type=checkbox]').change(function(){
+			var maximopermitidooo = 1000;
+			var controleee = $('#cf_group_adicionais_pagos11 input[type=checkbox]:checked').length;
+
+			if(controleee > maximopermitidooo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais2').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais2').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>
+
+
+		
+
+
+<!--INICIO DA QUANTIDADE-->
+<h5>Quantidade</h5>							
+<div class="input-group">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quantidade">
+			<span class="glyphicon glyphicon-minus"></span>
+		</button>
+	</span>
+	<input style="height: 34px;" type="text" name="quantidade" class="form-control input-number qtdpedido" value="1" min="1" max="100">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-success btn-number" data-type="plus" data-field="quantidade">
+			<span class="glyphicon glyphicon-plus"></span>
+		</button>
+	</span>
+</div>
+<!--FIM DA QUANTIDADE-->
+<br />
+	<textarea class="form-control obsitem" rows="3" placeholder="Alguma observa��o p/ este pedido?" name="observacao"></textarea>
+	
+<input type="hidden" name="id-item" value="11">
+<input type="hidden" name="add-Item" value="true">
+<input type="hidden" name="userid" value="1">
+<input type="hidden" name="nome_item" value="Batata frita P">
+<input type="hidden" name="nomeloja" value="lojateste">
+<br />
+
+
+</div>
+<div class="modal-footer">
+	<center><button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar janela</button></center>
+	<br>
+	<br>
+	<br>
+</div>
+</div>
+
+</div>
+
+</div>
+	
+	<a class="adicionarItemPedido_11">
+		<div id="footer">
+			<b>ADICIONAR AO PEDIDO</b>
+		</div>
+	</a>
+
+	
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.adicionarItemPedido_11').click(function(){
+			$.ajax({
+				url: 'https://cardapiozap.app.br/includes/processaAddItem.php',
+				method: "post",
+				data: $('#addItemPost_11').serialize(),
+
+				success: function(data){				
+					$('#resultadoAddItem').html(data);					
+					$('.qtdpedido').val('1');
+				}
+			});
+
+		}); 
+	});
+</script>
+
+</div>
+</div>
+</div>
+
+</div>
+</td>
+</form>
+</tr>
+				
+				<tr>
+				    <td data-toggle="modal" data-target="#popuppedido_12">
+				<figure class="thumb_menu_list"><img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/uploads/images/2020/01/batata-m.jpg&w=180&h=180" alt="Imagem-item" title="Imagem-item"/></figure>				<h5 style="margin-top: 3px;">Batata frita M</h5>
+				<p> 200g de batata frita. </p>
+				
+				<strong style="float: right;">
+				<b style='cursor:pointer;'>R$ 10,00</b>				</strong>
+					</td>
+					
+					<form id="addItemPost_12" name="addItemPost_12" method="post">
+					<td class="options">
+					    <div class="dropdown dropdown-options">
+					    
+					    <!-- Modal -->
+					    <div style="margin-top: 10px;" class="modal fade popuppedido" id="popuppedido_12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					    <div class="modal-content">
+					    <div class="modal-body">
+						<div class="dropdown-menupop" style="border-bottom: none;">
+						<a data-dismiss="modal" style="float: right;cursor: pointer;"id="fecharmodallogin" class="close-link"><i class="icon_close_alt2"></i></a>
+						
+						<center><b>Batata frita M    						<br /><b style='color: #4eb93e;'>R$ 10,00</b>						</b></center>
+						
+						<center>
+						    <br /><img width="70%" height="" src="https://cardapiozap.app.br/uploads/images/2020/01/batata-m.jpg" /><br /><br />					    </center>
+						    
+						    <input type="hidden" name="valor" value="10.00">		
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais12 input[type=checkbox]').change(function(){
+			var maximopermitidoo = 2;
+			var controlee = $('#cf_group_adicionais12 input[type=checkbox]:checked').length;
+
+			if(controlee > maximopermitidoo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>	
+
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+
+
+	
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais_pagos12 input[type=checkbox]').change(function(){
+			var maximopermitidooo = 1000;
+			var controleee = $('#cf_group_adicionais_pagos12 input[type=checkbox]:checked').length;
+
+			if(controleee > maximopermitidooo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais2').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais2').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>
+
+
+		
+
+
+<!--INICIO DA QUANTIDADE-->
+<h5>Quantidade</h5>							
+<div class="input-group">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quantidade">
+			<span class="glyphicon glyphicon-minus"></span>
+		</button>
+	</span>
+	<input style="height: 34px;" type="text" name="quantidade" class="form-control input-number qtdpedido" value="1" min="1" max="100">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-success btn-number" data-type="plus" data-field="quantidade">
+			<span class="glyphicon glyphicon-plus"></span>
+		</button>
+	</span>
+</div>
+<!--FIM DA QUANTIDADE-->
+<br />
+	<textarea class="form-control obsitem" rows="3" placeholder="Alguma observa��o p/ este pedido?" name="observacao"></textarea>
+	
+<input type="hidden" name="id-item" value="12">
+<input type="hidden" name="add-Item" value="true">
+<input type="hidden" name="userid" value="1">
+<input type="hidden" name="nome_item" value="Batata frita M">
+<input type="hidden" name="nomeloja" value="lojateste">
+<br />
+
+
+</div>
+<div class="modal-footer">
+	<center><button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar janela</button></center>
+	<br>
+	<br>
+	<br>
+</div>
+</div>
+
+</div>
+
+</div>
+	
+	<a class="adicionarItemPedido_12">
+		<div id="footer">
+			<b>ADICIONAR AO PEDIDO</b>
+		</div>
+	</a>
+
+	
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.adicionarItemPedido_12').click(function(){
+			$.ajax({
+				url: 'https://cardapiozap.app.br/includes/processaAddItem.php',
+				method: "post",
+				data: $('#addItemPost_12').serialize(),
+
+				success: function(data){				
+					$('#resultadoAddItem').html(data);					
+					$('.qtdpedido').val('1');
+				}
+			});
+
+		}); 
+	});
+</script>
+
+</div>
+</div>
+</div>
+
+</div>
+</td>
+</form>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+</div>
+
+    
+    <!-- INICIO DA DIV ACORDION DO CARDAPIO --> 
+	<div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
+	    <div class="panel panel-default" id="queijo4">
+	            <script type="text/javascript">
+            $(document).on("click", "#mudarsimbolo_13", function(){
+                ifelse if($(this).find("i").hasClass("fa-chevron-up")){
+            $(this).find("i").removeClass("fa-chevron-up").addClass("fa-chevron-down");
+                }else{
+                    $(this).find("i").removeClass("fa-chevron-down").addClass("fa-chevron-up");
+                }
+            });
+        </script>
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a id="mudarsimbolo_13" 
+                aria-hidden="true" 
+                class="accordion-toggle" 
+                data-toggle="collapse" 
+                data-parent="#accordion"
+                href="#queijo">
+                    <strong class="nomargin_top">QUEIJO</strong>
+                    <i class="fa fa-chevron-down pull-right"></i>
+                </a>
+			</h4>
+		</div>
+		
+		<div id="queijo" aria-labelledby="heading1" class="panel-collapse collapse in" id="example1" role="tabpanel">
+		    <div class="panel-body">
+		        Diversos tipos de queijo, diretamente de Minas!<br />		        
+    		        <div class="alert alert-info fade in nomargin">
+        		        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">�</button>
+        		        <p><center><b> Em breve teremos itens nessa categoria. Aguarde! </b></center></p>
+    				</div>
+    				
+</div>
+</div>
+</div>
+
+</div>
+
+    
+    <!-- INICIO DA DIV ACORDION DO CARDAPIO --> 
+	<div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
+	    <div class="panel panel-default" id="refrigerantes5">
+	            <script type="text/javascript">
+            $(document).on("click", "#mudarsimbolo_4", function(){
+                ifelse if($(this).find("i").hasClass("fa-chevron-up")){
+            $(this).find("i").removeClass("fa-chevron-up").addClass("fa-chevron-down");
+                }else{
+                    $(this).find("i").removeClass("fa-chevron-down").addClass("fa-chevron-up");
+                }
+            });
+        </script>
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a id="mudarsimbolo_4" 
+                aria-hidden="true" 
+                class="accordion-toggle" 
+                data-toggle="collapse" 
+                data-parent="#accordion"
+                href="#refrigerantes">
+                    <strong class="nomargin_top">REFRIGERANTES</strong>
+                    <i class="fa fa-chevron-down pull-right"></i>
+                </a>
+			</h4>
+		</div>
+		
+		<div id="refrigerantes" aria-labelledby="heading1" class="panel-collapse collapse in" id="example1" role="tabpanel">
+		    <div class="panel-body">
+		        Os melhores refrigerantes bem gelados para acompanhar seu pedido.<br />		        				<table class="table table-striped cart-list">
+				    <thead>
+				        <tr>
+				            <th>
+				            </th>
+				        </tr>
+				    </thead>
+				<tbody>
+				
+								
+				<tr>
+				    <td data-toggle="modal" data-target="#popuppedido_14">
+				<figure class="thumb_menu_list"><img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/uploads/images/2020/01/refrigerante-lata-cocacola.jpg&w=180&h=180" alt="Imagem-item" title="Imagem-item"/></figure>				<h5 style="margin-top: 3px;">Coca Cola</h5>
+				<p> Lata 350ml </p>
+				
+				<strong style="float: right;">
+				<b style='cursor:pointer;'>R$ 5,00</b>				</strong>
+					</td>
+					
+					<form id="addItemPost_14" name="addItemPost_14" method="post">
+					<td class="options">
+					    <div class="dropdown dropdown-options">
+					    
+					    <!-- Modal -->
+					    <div style="margin-top: 10px;" class="modal fade popuppedido" id="popuppedido_14" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					    <div class="modal-content">
+					    <div class="modal-body">
+						<div class="dropdown-menupop" style="border-bottom: none;">
+						<a data-dismiss="modal" style="float: right;cursor: pointer;"id="fecharmodallogin" class="close-link"><i class="icon_close_alt2"></i></a>
+						
+						<center><b>Coca Cola    						<br /><b style='color: #4eb93e;'>R$ 5,00</b>						</b></center>
+						
+						<center>
+						    <br /><img width="70%" height="" src="https://cardapiozap.app.br/uploads/images/2020/01/refrigerante-lata-cocacola.jpg" /><br /><br />					    </center>
+						    
+						    <input type="hidden" name="valor" value="5.00">		
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais14 input[type=checkbox]').change(function(){
+			var maximopermitidoo = 1000;
+			var controlee = $('#cf_group_adicionais14 input[type=checkbox]:checked').length;
+
+			if(controlee > maximopermitidoo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>	
+
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+
+
+	
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais_pagos14 input[type=checkbox]').change(function(){
+			var maximopermitidooo = 1000;
+			var controleee = $('#cf_group_adicionais_pagos14 input[type=checkbox]:checked').length;
+
+			if(controleee > maximopermitidooo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais2').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais2').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>
+
+
+		
+
+
+<!--INICIO DA QUANTIDADE-->
+<h5>Quantidade</h5>							
+<div class="input-group">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quantidade">
+			<span class="glyphicon glyphicon-minus"></span>
+		</button>
+	</span>
+	<input style="height: 34px;" type="text" name="quantidade" class="form-control input-number qtdpedido" value="1" min="1" max="100">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-success btn-number" data-type="plus" data-field="quantidade">
+			<span class="glyphicon glyphicon-plus"></span>
+		</button>
+	</span>
+</div>
+<!--FIM DA QUANTIDADE-->
+<br />
+	<textarea class="form-control obsitem" rows="3" placeholder="Alguma observa��o p/ este pedido?" name="observacao"></textarea>
+	
+<input type="hidden" name="id-item" value="14">
+<input type="hidden" name="add-Item" value="true">
+<input type="hidden" name="userid" value="1">
+<input type="hidden" name="nome_item" value="Coca Cola">
+<input type="hidden" name="nomeloja" value="lojateste">
+<br />
+
+
+</div>
+<div class="modal-footer">
+	<center><button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar janela</button></center>
+	<br>
+	<br>
+	<br>
+</div>
+</div>
+
+</div>
+
+</div>
+	
+	<a class="adicionarItemPedido_14">
+		<div id="footer">
+			<b>ADICIONAR AO PEDIDO</b>
+		</div>
+	</a>
+
+	
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.adicionarItemPedido_14').click(function(){
+			$.ajax({
+				url: 'https://cardapiozap.app.br/includes/processaAddItem.php',
+				method: "post",
+				data: $('#addItemPost_14').serialize(),
+
+				success: function(data){				
+					$('#resultadoAddItem').html(data);					
+					$('.qtdpedido').val('1');
+				}
+			});
+
+		}); 
+	});
+</script>
+
+</div>
+</div>
+</div>
+
+</div>
+</td>
+</form>
+</tr>
+				
+				<tr>
+				    <td data-toggle="modal" data-target="#popuppedido_15">
+				<figure class="thumb_menu_list"><img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/uploads/images/2020/01/refrigerante-lata-coca-cola-zero.jpg&w=180&h=180" alt="Imagem-item" title="Imagem-item"/></figure>				<h5 style="margin-top: 3px;">Coca Cola Zero</h5>
+				<p> Lata 350ml </p>
+				
+				<strong style="float: right;">
+				<b style='cursor:pointer;'>R$ 5,00</b>				</strong>
+					</td>
+					
+					<form id="addItemPost_15" name="addItemPost_15" method="post">
+					<td class="options">
+					    <div class="dropdown dropdown-options">
+					    
+					    <!-- Modal -->
+					    <div style="margin-top: 10px;" class="modal fade popuppedido" id="popuppedido_15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					    <div class="modal-content">
+					    <div class="modal-body">
+						<div class="dropdown-menupop" style="border-bottom: none;">
+						<a data-dismiss="modal" style="float: right;cursor: pointer;"id="fecharmodallogin" class="close-link"><i class="icon_close_alt2"></i></a>
+						
+						<center><b>Coca Cola Zero    						<br /><b style='color: #4eb93e;'>R$ 5,00</b>						</b></center>
+						
+						<center>
+						    <br /><img width="70%" height="" src="https://cardapiozap.app.br/uploads/images/2020/01/refrigerante-lata-coca-cola-zero.jpg" /><br /><br />					    </center>
+						    
+						    <input type="hidden" name="valor" value="5.00">		
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais15 input[type=checkbox]').change(function(){
+			var maximopermitidoo = 1000;
+			var controlee = $('#cf_group_adicionais15 input[type=checkbox]:checked').length;
+
+			if(controlee > maximopermitidoo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>	
+
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+
+
+	
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais_pagos15 input[type=checkbox]').change(function(){
+			var maximopermitidooo = 1000;
+			var controleee = $('#cf_group_adicionais_pagos15 input[type=checkbox]:checked').length;
+
+			if(controleee > maximopermitidooo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais2').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais2').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>
+
+
+		
+
+
+<!--INICIO DA QUANTIDADE-->
+<h5>Quantidade</h5>							
+<div class="input-group">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quantidade">
+			<span class="glyphicon glyphicon-minus"></span>
+		</button>
+	</span>
+	<input style="height: 34px;" type="text" name="quantidade" class="form-control input-number qtdpedido" value="1" min="1" max="100">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-success btn-number" data-type="plus" data-field="quantidade">
+			<span class="glyphicon glyphicon-plus"></span>
+		</button>
+	</span>
+</div>
+<!--FIM DA QUANTIDADE-->
+<br />
+	<textarea class="form-control obsitem" rows="3" placeholder="Alguma observa��o p/ este pedido?" name="observacao"></textarea>
+	
+<input type="hidden" name="id-item" value="15">
+<input type="hidden" name="add-Item" value="true">
+<input type="hidden" name="userid" value="1">
+<input type="hidden" name="nome_item" value="Coca Cola Zero">
+<input type="hidden" name="nomeloja" value="lojateste">
+<br />
+
+
+</div>
+<div class="modal-footer">
+	<center><button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar janela</button></center>
+	<br>
+	<br>
+	<br>
+</div>
+</div>
+
+</div>
+
+</div>
+	
+	<a class="adicionarItemPedido_15">
+		<div id="footer">
+			<b>ADICIONAR AO PEDIDO</b>
+		</div>
+	</a>
+
+	
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.adicionarItemPedido_15').click(function(){
+			$.ajax({
+				url: 'https://cardapiozap.app.br/includes/processaAddItem.php',
+				method: "post",
+				data: $('#addItemPost_15').serialize(),
+
+				success: function(data){				
+					$('#resultadoAddItem').html(data);					
+					$('.qtdpedido').val('1');
+				}
+			});
+
+		}); 
+	});
+</script>
+
+</div>
+</div>
+</div>
+
+</div>
+</td>
+</form>
+</tr>
+				
+				<tr>
+				    <td data-toggle="modal" data-target="#popuppedido_16">
+				<figure class="thumb_menu_list"><img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/uploads/images/2020/01/refrigerante-lata-guarana.jpg&w=180&h=180" alt="Imagem-item" title="Imagem-item"/></figure>				<h5 style="margin-top: 3px;">Guaran� Antarctica</h5>
+				<p> Lata 350ml </p>
+				
+				<strong style="float: right;">
+				<b style='cursor:pointer;'>R$ 5,00</b>				</strong>
+					</td>
+					
+					<form id="addItemPost_16" name="addItemPost_16" method="post">
+					<td class="options">
+					    <div class="dropdown dropdown-options">
+					    
+					    <!-- Modal -->
+					    <div style="margin-top: 10px;" class="modal fade popuppedido" id="popuppedido_16" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					    <div class="modal-content">
+					    <div class="modal-body">
+						<div class="dropdown-menupop" style="border-bottom: none;">
+						<a data-dismiss="modal" style="float: right;cursor: pointer;"id="fecharmodallogin" class="close-link"><i class="icon_close_alt2"></i></a>
+						
+						<center><b>Guaran� Antarctica    						<br /><b style='color: #4eb93e;'>R$ 5,00</b>						</b></center>
+						
+						<center>
+						    <br /><img width="70%" height="" src="https://cardapiozap.app.br/uploads/images/2020/01/refrigerante-lata-guarana.jpg" /><br /><br />					    </center>
+						    
+						    <input type="hidden" name="valor" value="5.00">		
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais16 input[type=checkbox]').change(function(){
+			var maximopermitidoo = 1000;
+			var controlee = $('#cf_group_adicionais16 input[type=checkbox]:checked').length;
+
+			if(controlee > maximopermitidoo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>	
+
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+
+
+	
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais_pagos16 input[type=checkbox]').change(function(){
+			var maximopermitidooo = 1000;
+			var controleee = $('#cf_group_adicionais_pagos16 input[type=checkbox]:checked').length;
+
+			if(controleee > maximopermitidooo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais2').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais2').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>
+
+
+		
+
+
+<!--INICIO DA QUANTIDADE-->
+<h5>Quantidade</h5>							
+<div class="input-group">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quantidade">
+			<span class="glyphicon glyphicon-minus"></span>
+		</button>
+	</span>
+	<input style="height: 34px;" type="text" name="quantidade" class="form-control input-number qtdpedido" value="1" min="1" max="100">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-success btn-number" data-type="plus" data-field="quantidade">
+			<span class="glyphicon glyphicon-plus"></span>
+		</button>
+	</span>
+</div>
+<!--FIM DA QUANTIDADE-->
+<br />
+	<textarea class="form-control obsitem" rows="3" placeholder="Alguma observa��o p/ este pedido?" name="observacao"></textarea>
+	
+<input type="hidden" name="id-item" value="16">
+<input type="hidden" name="add-Item" value="true">
+<input type="hidden" name="userid" value="1">
+<input type="hidden" name="nome_item" value="Guaran� Antarctica">
+<input type="hidden" name="nomeloja" value="lojateste">
+<br />
+
+
+</div>
+<div class="modal-footer">
+	<center><button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar janela</button></center>
+	<br>
+	<br>
+	<br>
+</div>
+</div>
+
+</div>
+
+</div>
+	
+	<a class="adicionarItemPedido_16">
+		<div id="footer">
+			<b>ADICIONAR AO PEDIDO</b>
+		</div>
+	</a>
+
+	
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.adicionarItemPedido_16').click(function(){
+			$.ajax({
+				url: 'https://cardapiozap.app.br/includes/processaAddItem.php',
+				method: "post",
+				data: $('#addItemPost_16').serialize(),
+
+				success: function(data){				
+					$('#resultadoAddItem').html(data);					
+					$('.qtdpedido').val('1');
+				}
+			});
+
+		}); 
+	});
+</script>
+
+</div>
+</div>
+</div>
+
+</div>
+</td>
+</form>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+</div>
+
+    
+    <!-- INICIO DA DIV ACORDION DO CARDAPIO --> 
+	<div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
+	    <div class="panel panel-default" id="sanduiches6">
+	            <script type="text/javascript">
+            $(document).on("click", "#mudarsimbolo_1", function(){
+                ifelse if($(this).find("i").hasClass("fa-chevron-up")){
+            $(this).find("i").removeClass("fa-chevron-up").addClass("fa-chevron-down");
+                }else{
+                    $(this).find("i").removeClass("fa-chevron-down").addClass("fa-chevron-up");
+                }
+            });
+        </script>
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a id="mudarsimbolo_1" 
+                aria-hidden="true" 
+                class="accordion-toggle" 
+                data-toggle="collapse" 
+                data-parent="#accordion"
+                href="#sanduiches">
+                    <strong class="nomargin_top">SANDUICHES</strong>
+                    <i class="fa fa-chevron-down pull-right"></i>
+                </a>
+			</h4>
+		</div>
+		
+		<div id="sanduiches" aria-labelledby="heading1" class="panel-collapse collapse in" id="example1" role="tabpanel">
+		    <div class="panel-body">
+		        Sanduiches artesanais elaborados com produtos de alta qualidade.<br />		        				<table class="table table-striped cart-list">
+				    <thead>
+				        <tr>
+				            <th>
+				            </th>
+				        </tr>
+				    </thead>
+				<tbody>
+				
+								
+				<tr>
+				    <td data-toggle="modal" data-target="#popuppedido_1">
+				<figure class="thumb_menu_list"><img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/uploads/images/2020/01/gran-pagan.png&w=180&h=180" alt="Imagem-item" title="Imagem-item"/></figure>				<h5 style="margin-top: 3px;">Classic Burger</h5>
+				<p> P�o brioche, burger 120g assado na brasa, mu�arela, farofa de bacon, cebola caramelizada e maionese da casa. </p>
+				
+				<strong style="float: right;">
+				<b style='cursor:pointer;'>R$ 17,00</b>				</strong>
+					</td>
+					
+					<form id="addItemPost_1" name="addItemPost_1" method="post">
+					<td class="options">
+					    <div class="dropdown dropdown-options">
+					    
+					    <!-- Modal -->
+					    <div style="margin-top: 10px;" class="modal fade popuppedido" id="popuppedido_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					    <div class="modal-content">
+					    <div class="modal-body">
+						<div class="dropdown-menupop" style="border-bottom: none;">
+						<a data-dismiss="modal" style="float: right;cursor: pointer;"id="fecharmodallogin" class="close-link"><i class="icon_close_alt2"></i></a>
+						
+						<center><b>Classic Burger    						<br /><b style='color: #4eb93e;'>R$ 17,00</b>						</b></center>
+						
+						<center>
+						    <br /><img width="70%" height="" src="https://cardapiozap.app.br/uploads/images/2020/01/gran-pagan.png" /><br /><br />					    </center>
+						    
+						    <input type="hidden" name="valor" value="17.00">		
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais1 input[type=checkbox]').change(function(){
+			var maximopermitidoo = 3;
+			var controlee = $('#cf_group_adicionais1 input[type=checkbox]:checked').length;
+
+			if(controlee > maximopermitidoo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>	
+
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+
+
+	
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais_pagos1 input[type=checkbox]').change(function(){
+			var maximopermitidooo = 3;
+			var controleee = $('#cf_group_adicionais_pagos1 input[type=checkbox]:checked').length;
+
+			if(controleee > maximopermitidooo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais2').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais2').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>
+
+
+		
+
+
+<!--INICIO DA QUANTIDADE-->
+<h5>Quantidade</h5>							
+<div class="input-group">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quantidade">
+			<span class="glyphicon glyphicon-minus"></span>
+		</button>
+	</span>
+	<input style="height: 34px;" type="text" name="quantidade" class="form-control input-number qtdpedido" value="1" min="1" max="100">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-success btn-number" data-type="plus" data-field="quantidade">
+			<span class="glyphicon glyphicon-plus"></span>
+		</button>
+	</span>
+</div>
+<!--FIM DA QUANTIDADE-->
+<br />
+	<textarea class="form-control obsitem" rows="3" placeholder="Alguma observa��o p/ este pedido?" name="observacao"></textarea>
+	
+<input type="hidden" name="id-item" value="1">
+<input type="hidden" name="add-Item" value="true">
+<input type="hidden" name="userid" value="1">
+<input type="hidden" name="nome_item" value="Classic Burger">
+<input type="hidden" name="nomeloja" value="lojateste">
+<br />
+
+
+</div>
+<div class="modal-footer">
+	<center><button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar janela</button></center>
+	<br>
+	<br>
+	<br>
+</div>
+</div>
+
+</div>
+
+</div>
+	
+	<a class="adicionarItemPedido_1">
+		<div id="footer">
+			<b>ADICIONAR AO PEDIDO</b>
+		</div>
+	</a>
+
+	
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.adicionarItemPedido_1').click(function(){
+			$.ajax({
+				url: 'https://cardapiozap.app.br/includes/processaAddItem.php',
+				method: "post",
+				data: $('#addItemPost_1').serialize(),
+
+				success: function(data){				
+					$('#resultadoAddItem').html(data);					
+					$('.qtdpedido').val('1');
+				}
+			});
+
+		}); 
+	});
+</script>
+
+</div>
+</div>
+</div>
+
+</div>
+</td>
+</form>
+</tr>
+				
+				<tr>
+				    <td data-toggle="modal" data-target="#popuppedido_5">
+				<figure class="thumb_menu_list"><img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/uploads/images/2020/01/fraldibrie.png&w=180&h=180" alt="Imagem-item" title="Imagem-item"/></figure>				<h5 style="margin-top: 3px;">Fraldibrie</h5>
+				<p> P�o australiano, burger 180g assado na brasa, queijo brie, cebola caramelizada no mel, bacon, tomate cereja, r�cula e maionese da casa. </p>
+				
+				<strong style="float: right;">
+				<b style='cursor:pointer;'>R$ 25,00</b>				</strong>
+					</td>
+					
+					<form id="addItemPost_5" name="addItemPost_5" method="post">
+					<td class="options">
+					    <div class="dropdown dropdown-options">
+					    
+					    <!-- Modal -->
+					    <div style="margin-top: 10px;" class="modal fade popuppedido" id="popuppedido_5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					    <div class="modal-content">
+					    <div class="modal-body">
+						<div class="dropdown-menupop" style="border-bottom: none;">
+						<a data-dismiss="modal" style="float: right;cursor: pointer;"id="fecharmodallogin" class="close-link"><i class="icon_close_alt2"></i></a>
+						
+						<center><b>Fraldibrie    						<br /><b style='color: #4eb93e;'>R$ 25,00</b>						</b></center>
+						
+						<center>
+						    <br /><img width="70%" height="" src="https://cardapiozap.app.br/uploads/images/2020/01/fraldibrie.png" /><br /><br />					    </center>
+						    
+						    <input type="hidden" name="valor" value="25.00">		
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais5 input[type=checkbox]').change(function(){
+			var maximopermitidoo = 3;
+			var controlee = $('#cf_group_adicionais5 input[type=checkbox]:checked').length;
+
+			if(controlee > maximopermitidoo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>	
+
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+
+
+	
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais_pagos5 input[type=checkbox]').change(function(){
+			var maximopermitidooo = 1000;
+			var controleee = $('#cf_group_adicionais_pagos5 input[type=checkbox]:checked').length;
+
+			if(controleee > maximopermitidooo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais2').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais2').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>
+
+
+		
+
+
+<!--INICIO DA QUANTIDADE-->
+<h5>Quantidade</h5>							
+<div class="input-group">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quantidade">
+			<span class="glyphicon glyphicon-minus"></span>
+		</button>
+	</span>
+	<input style="height: 34px;" type="text" name="quantidade" class="form-control input-number qtdpedido" value="1" min="1" max="100">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-success btn-number" data-type="plus" data-field="quantidade">
+			<span class="glyphicon glyphicon-plus"></span>
+		</button>
+	</span>
+</div>
+<!--FIM DA QUANTIDADE-->
+<br />
+	<textarea class="form-control obsitem" rows="3" placeholder="Alguma observa��o p/ este pedido?" name="observacao"></textarea>
+	
+<input type="hidden" name="id-item" value="5">
+<input type="hidden" name="add-Item" value="true">
+<input type="hidden" name="userid" value="1">
+<input type="hidden" name="nome_item" value="Fraldibrie">
+<input type="hidden" name="nomeloja" value="lojateste">
+<br />
+
+
+</div>
+<div class="modal-footer">
+	<center><button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar janela</button></center>
+	<br>
+	<br>
+	<br>
+</div>
+</div>
+
+</div>
+
+</div>
+	
+	<a class="adicionarItemPedido_5">
+		<div id="footer">
+			<b>ADICIONAR AO PEDIDO</b>
+		</div>
+	</a>
+
+	
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.adicionarItemPedido_5').click(function(){
+			$.ajax({
+				url: 'https://cardapiozap.app.br/includes/processaAddItem.php',
+				method: "post",
+				data: $('#addItemPost_5').serialize(),
+
+				success: function(data){				
+					$('#resultadoAddItem').html(data);					
+					$('.qtdpedido').val('1');
+				}
+			});
+
+		}); 
+	});
+</script>
+
+</div>
+</div>
+</div>
+
+</div>
+</td>
+</form>
+</tr>
+				
+				<tr>
+				    <td data-toggle="modal" data-target="#popuppedido_2">
+				<figure class="thumb_menu_list"><img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/uploads/images/2020/01/gran-pagan.png&w=180&h=180" alt="Imagem-item" title="Imagem-item"/></figure>				<h5 style="margin-top: 3px;">Gran Pagan</h5>
+				<p> P�o brioche, burger 180g assado na brasa, creme de queijo grana padano, bacon, cebola roxa refogada e maionese da casa. </p>
+				
+				<strong style="float: right;">
+				<b style='cursor:pointer;'>R$ 20,00</b>				</strong>
+					</td>
+					
+					<form id="addItemPost_2" name="addItemPost_2" method="post">
+					<td class="options">
+					    <div class="dropdown dropdown-options">
+					    
+					    <!-- Modal -->
+					    <div style="margin-top: 10px;" class="modal fade popuppedido" id="popuppedido_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					    <div class="modal-content">
+					    <div class="modal-body">
+						<div class="dropdown-menupop" style="border-bottom: none;">
+						<a data-dismiss="modal" style="float: right;cursor: pointer;"id="fecharmodallogin" class="close-link"><i class="icon_close_alt2"></i></a>
+						
+						<center><b>Gran Pagan    						<br /><b style='color: #4eb93e;'>R$ 20,00</b>						</b></center>
+						
+						<center>
+						    <br /><img width="70%" height="" src="https://cardapiozap.app.br/uploads/images/2020/01/gran-pagan.png" /><br /><br />					    </center>
+						    
+						    <input type="hidden" name="valor" value="20.00">		
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais2 input[type=checkbox]').change(function(){
+			var maximopermitidoo = 3;
+			var controlee = $('#cf_group_adicionais2 input[type=checkbox]:checked').length;
+
+			if(controlee > maximopermitidoo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>	
+
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+
+
+	
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais_pagos2 input[type=checkbox]').change(function(){
+			var maximopermitidooo = 1000;
+			var controleee = $('#cf_group_adicionais_pagos2 input[type=checkbox]:checked').length;
+
+			if(controleee > maximopermitidooo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais2').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais2').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>
+
+
+		
+
+
+<!--INICIO DA QUANTIDADE-->
+<h5>Quantidade</h5>							
+<div class="input-group">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quantidade">
+			<span class="glyphicon glyphicon-minus"></span>
+		</button>
+	</span>
+	<input style="height: 34px;" type="text" name="quantidade" class="form-control input-number qtdpedido" value="1" min="1" max="100">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-success btn-number" data-type="plus" data-field="quantidade">
+			<span class="glyphicon glyphicon-plus"></span>
+		</button>
+	</span>
+</div>
+<!--FIM DA QUANTIDADE-->
+<br />
+	<textarea class="form-control obsitem" rows="3" placeholder="Alguma observa��o p/ este pedido?" name="observacao"></textarea>
+	
+<input type="hidden" name="id-item" value="2">
+<input type="hidden" name="add-Item" value="true">
+<input type="hidden" name="userid" value="1">
+<input type="hidden" name="nome_item" value="Gran Pagan">
+<input type="hidden" name="nomeloja" value="lojateste">
+<br />
+
+
+</div>
+<div class="modal-footer">
+	<center><button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar janela</button></center>
+	<br>
+	<br>
+	<br>
+</div>
+</div>
+
+</div>
+
+</div>
+	
+	<a class="adicionarItemPedido_2">
+		<div id="footer">
+			<b>ADICIONAR AO PEDIDO</b>
+		</div>
+	</a>
+
+	
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.adicionarItemPedido_2').click(function(){
+			$.ajax({
+				url: 'https://cardapiozap.app.br/includes/processaAddItem.php',
+				method: "post",
+				data: $('#addItemPost_2').serialize(),
+
+				success: function(data){				
+					$('#resultadoAddItem').html(data);					
+					$('.qtdpedido').val('1');
+				}
+			});
+
+		}); 
+	});
+</script>
+
+</div>
+</div>
+</div>
+
+</div>
+</td>
+</form>
+</tr>
+				
+				<tr>
+				    <td data-toggle="modal" data-target="#popuppedido_6">
+				<figure class="thumb_menu_list"><img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/uploads/images/2020/01/monster.png&w=180&h=180" alt="Imagem-item" title="Imagem-item"/></figure>				<h5 style="margin-top: 3px;">Monster bacon</h5>
+				<p> P�o brioche, 3 burgers de 120g assado na brasa, queijo cheddar, bacon, cebola caramelizada e maionese da casa. </p>
+				
+				<strong style="float: right;">
+				<b style='cursor:pointer;'>R$ 35,00</b>				</strong>
+					</td>
+					
+					<form id="addItemPost_6" name="addItemPost_6" method="post">
+					<td class="options">
+					    <div class="dropdown dropdown-options">
+					    
+					    <!-- Modal -->
+					    <div style="margin-top: 10px;" class="modal fade popuppedido" id="popuppedido_6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					    <div class="modal-content">
+					    <div class="modal-body">
+						<div class="dropdown-menupop" style="border-bottom: none;">
+						<a data-dismiss="modal" style="float: right;cursor: pointer;"id="fecharmodallogin" class="close-link"><i class="icon_close_alt2"></i></a>
+						
+						<center><b>Monster bacon    						<br /><b style='color: #4eb93e;'>R$ 35,00</b>						</b></center>
+						
+						<center>
+						    <br /><img width="70%" height="" src="https://cardapiozap.app.br/uploads/images/2020/01/monster.png" /><br /><br />					    </center>
+						    
+						    <input type="hidden" name="valor" value="35.00">		
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais6 input[type=checkbox]').change(function(){
+			var maximopermitidoo = 3;
+			var controlee = $('#cf_group_adicionais6 input[type=checkbox]:checked').length;
+
+			if(controlee > maximopermitidoo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>	
+
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+
+
+	
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais_pagos6 input[type=checkbox]').change(function(){
+			var maximopermitidooo = 1000;
+			var controleee = $('#cf_group_adicionais_pagos6 input[type=checkbox]:checked').length;
+
+			if(controleee > maximopermitidooo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais2').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais2').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>
+
+
+		
+
+
+<!--INICIO DA QUANTIDADE-->
+<h5>Quantidade</h5>							
+<div class="input-group">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quantidade">
+			<span class="glyphicon glyphicon-minus"></span>
+		</button>
+	</span>
+	<input style="height: 34px;" type="text" name="quantidade" class="form-control input-number qtdpedido" value="1" min="1" max="100">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-success btn-number" data-type="plus" data-field="quantidade">
+			<span class="glyphicon glyphicon-plus"></span>
+		</button>
+	</span>
+</div>
+<!--FIM DA QUANTIDADE-->
+<br />
+	<textarea class="form-control obsitem" rows="3" placeholder="Alguma observa��o p/ este pedido?" name="observacao"></textarea>
+	
+<input type="hidden" name="id-item" value="6">
+<input type="hidden" name="add-Item" value="true">
+<input type="hidden" name="userid" value="1">
+<input type="hidden" name="nome_item" value="Monster bacon">
+<input type="hidden" name="nomeloja" value="lojateste">
+<br />
+
+
+</div>
+<div class="modal-footer">
+	<center><button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar janela</button></center>
+	<br>
+	<br>
+	<br>
+</div>
+</div>
+
+</div>
+
+</div>
+	
+	<a class="adicionarItemPedido_6">
+		<div id="footer">
+			<b>ADICIONAR AO PEDIDO</b>
+		</div>
+	</a>
+
+	
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.adicionarItemPedido_6').click(function(){
+			$.ajax({
+				url: 'https://cardapiozap.app.br/includes/processaAddItem.php',
+				method: "post",
+				data: $('#addItemPost_6').serialize(),
+
+				success: function(data){				
+					$('#resultadoAddItem').html(data);					
+					$('.qtdpedido').val('1');
+				}
+			});
+
+		}); 
+	});
+</script>
+
+</div>
+</div>
+</div>
+
+</div>
+</td>
+</form>
+</tr>
+				
+				<tr>
+				    <td data-toggle="modal" data-target="#popuppedido_4">
+				<figure class="thumb_menu_list"><img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/uploads/images/2020/01/ultimate.png&w=180&h=180" alt="Imagem-item" title="Imagem-item"/></figure>				<h5 style="margin-top: 3px;">Ultimate Cheese</h5>
+				<p> P�o brioche, burger 120 assado na brasa, mu�arela, alface, cebola caramelizada e maionese da casa. </p>
+				
+				<strong style="float: right;">
+				<b style='cursor:pointer;'>R$ 14,00</b>				</strong>
+					</td>
+					
+					<form id="addItemPost_4" name="addItemPost_4" method="post">
+					<td class="options">
+					    <div class="dropdown dropdown-options">
+					    
+					    <!-- Modal -->
+					    <div style="margin-top: 10px;" class="modal fade popuppedido" id="popuppedido_4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					    <div class="modal-content">
+					    <div class="modal-body">
+						<div class="dropdown-menupop" style="border-bottom: none;">
+						<a data-dismiss="modal" style="float: right;cursor: pointer;"id="fecharmodallogin" class="close-link"><i class="icon_close_alt2"></i></a>
+						
+						<center><b>Ultimate Cheese    						<br /><b style='color: #4eb93e;'>R$ 14,00</b>						</b></center>
+						
+						<center>
+						    <br /><img width="70%" height="" src="https://cardapiozap.app.br/uploads/images/2020/01/ultimate.png" /><br /><br />					    </center>
+						    
+						    <input type="hidden" name="valor" value="14.00">		
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais4 input[type=checkbox]').change(function(){
+			var maximopermitidoo = 3;
+			var controlee = $('#cf_group_adicionais4 input[type=checkbox]:checked').length;
+
+			if(controlee > maximopermitidoo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>	
+
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+
+
+	
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais_pagos4 input[type=checkbox]').change(function(){
+			var maximopermitidooo = 1000;
+			var controleee = $('#cf_group_adicionais_pagos4 input[type=checkbox]:checked').length;
+
+			if(controleee > maximopermitidooo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais2').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais2').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>
+
+
+		
+
+
+<!--INICIO DA QUANTIDADE-->
+<h5>Quantidade</h5>							
+<div class="input-group">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quantidade">
+			<span class="glyphicon glyphicon-minus"></span>
+		</button>
+	</span>
+	<input style="height: 34px;" type="text" name="quantidade" class="form-control input-number qtdpedido" value="1" min="1" max="100">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-success btn-number" data-type="plus" data-field="quantidade">
+			<span class="glyphicon glyphicon-plus"></span>
+		</button>
+	</span>
+</div>
+<!--FIM DA QUANTIDADE-->
+<br />
+	<textarea class="form-control obsitem" rows="3" placeholder="Alguma observa��o p/ este pedido?" name="observacao"></textarea>
+	
+<input type="hidden" name="id-item" value="4">
+<input type="hidden" name="add-Item" value="true">
+<input type="hidden" name="userid" value="1">
+<input type="hidden" name="nome_item" value="Ultimate Cheese">
+<input type="hidden" name="nomeloja" value="lojateste">
+<br />
+
+
+</div>
+<div class="modal-footer">
+	<center><button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar janela</button></center>
+	<br>
+	<br>
+	<br>
+</div>
+</div>
+
+</div>
+
+</div>
+	
+	<a class="adicionarItemPedido_4">
+		<div id="footer">
+			<b>ADICIONAR AO PEDIDO</b>
+		</div>
+	</a>
+
+	
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.adicionarItemPedido_4').click(function(){
+			$.ajax({
+				url: 'https://cardapiozap.app.br/includes/processaAddItem.php',
+				method: "post",
+				data: $('#addItemPost_4').serialize(),
+
+				success: function(data){				
+					$('#resultadoAddItem').html(data);					
+					$('.qtdpedido').val('1');
+				}
+			});
+
+		}); 
+	});
+</script>
+
+</div>
+</div>
+</div>
+
+</div>
+</td>
+</form>
+</tr>
+				
+				<tr>
+				    <td data-toggle="modal" data-target="#popuppedido_3">
+				<figure class="thumb_menu_list"><img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/uploads/images/2020/01/wonderful.png&w=180&h=180" alt="Imagem-item" title="Imagem-item"/></figure>				<h5 style="margin-top: 3px;">Wonderful double</h5>
+				<p> P�o brioche, 2 burgers 120g assado na brasa, batata frita, mu�arela, bacon, maionese da casa e alface. </p>
+				
+				<strong style="float: right;">
+				<b style='cursor:pointer;'>R$ 25,00</b>				</strong>
+					</td>
+					
+					<form id="addItemPost_3" name="addItemPost_3" method="post">
+					<td class="options">
+					    <div class="dropdown dropdown-options">
+					    
+					    <!-- Modal -->
+					    <div style="margin-top: 10px;" class="modal fade popuppedido" id="popuppedido_3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					    <div class="modal-content">
+					    <div class="modal-body">
+						<div class="dropdown-menupop" style="border-bottom: none;">
+						<a data-dismiss="modal" style="float: right;cursor: pointer;"id="fecharmodallogin" class="close-link"><i class="icon_close_alt2"></i></a>
+						
+						<center><b>Wonderful double    						<br /><b style='color: #4eb93e;'>R$ 25,00</b>						</b></center>
+						
+						<center>
+						    <br /><img width="70%" height="" src="https://cardapiozap.app.br/uploads/images/2020/01/wonderful.png" /><br /><br />					    </center>
+						    
+						    <input type="hidden" name="valor" value="25.00">		
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais3 input[type=checkbox]').change(function(){
+			var maximopermitidoo = 3;
+			var controlee = $('#cf_group_adicionais3 input[type=checkbox]:checked').length;
+
+			if(controlee > maximopermitidoo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>	
+
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+
+
+	
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais_pagos3 input[type=checkbox]').change(function(){
+			var maximopermitidooo = 1000;
+			var controleee = $('#cf_group_adicionais_pagos3 input[type=checkbox]:checked').length;
+
+			if(controleee > maximopermitidooo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais2').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais2').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>
+
+
+		
+
+
+<!--INICIO DA QUANTIDADE-->
+<h5>Quantidade</h5>							
+<div class="input-group">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quantidade">
+			<span class="glyphicon glyphicon-minus"></span>
+		</button>
+	</span>
+	<input style="height: 34px;" type="text" name="quantidade" class="form-control input-number qtdpedido" value="1" min="1" max="100">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-success btn-number" data-type="plus" data-field="quantidade">
+			<span class="glyphicon glyphicon-plus"></span>
+		</button>
+	</span>
+</div>
+<!--FIM DA QUANTIDADE-->
+<br />
+	<textarea class="form-control obsitem" rows="3" placeholder="Alguma observa��o p/ este pedido?" name="observacao"></textarea>
+	
+<input type="hidden" name="id-item" value="3">
+<input type="hidden" name="add-Item" value="true">
+<input type="hidden" name="userid" value="1">
+<input type="hidden" name="nome_item" value="Wonderful double">
+<input type="hidden" name="nomeloja" value="lojateste">
+<br />
+
+
+</div>
+<div class="modal-footer">
+	<center><button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar janela</button></center>
+	<br>
+	<br>
+	<br>
+</div>
+</div>
+
+</div>
+
+</div>
+	
+	<a class="adicionarItemPedido_3">
+		<div id="footer">
+			<b>ADICIONAR AO PEDIDO</b>
+		</div>
+	</a>
+
+	
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.adicionarItemPedido_3').click(function(){
+			$.ajax({
+				url: 'https://cardapiozap.app.br/includes/processaAddItem.php',
+				method: "post",
+				data: $('#addItemPost_3').serialize(),
+
+				success: function(data){				
+					$('#resultadoAddItem').html(data);					
+					$('.qtdpedido').val('1');
+				}
+			});
+
+		}); 
+	});
+</script>
+
+</div>
+</div>
+</div>
+
+</div>
+</td>
+</form>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+</div>
+
+    
+    <!-- INICIO DA DIV ACORDION DO CARDAPIO --> 
+	<div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
+	    <div class="panel panel-default" id="sucos7">
+	            <script type="text/javascript">
+            $(document).on("click", "#mudarsimbolo_5", function(){
+                ifelse if($(this).find("i").hasClass("fa-chevron-up")){
+            $(this).find("i").removeClass("fa-chevron-up").addClass("fa-chevron-down");
+                }else{
+                    $(this).find("i").removeClass("fa-chevron-down").addClass("fa-chevron-up");
+                }
+            });
+        </script>
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a id="mudarsimbolo_5" 
+                aria-hidden="true" 
+                class="accordion-toggle" 
+                data-toggle="collapse" 
+                data-parent="#accordion"
+                href="#sucos">
+                    <strong class="nomargin_top">SUCOS</strong>
+                    <i class="fa fa-chevron-down pull-right"></i>
+                </a>
+			</h4>
+		</div>
+		
+		<div id="sucos" aria-labelledby="heading1" class="panel-collapse collapse in" id="example1" role="tabpanel">
+		    <div class="panel-body">
+		        Experimente nossos sucos maravilhosos com polpa de fruras naturais.<br />		        				<table class="table table-striped cart-list">
+				    <thead>
+				        <tr>
+				            <th>
+				            </th>
+				        </tr>
+				    </thead>
+				<tbody>
+				
+								
+				<tr>
+				    <td data-toggle="modal" data-target="#popuppedido_18">
+				<figure class="thumb_menu_list"><img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/uploads/images/2020/01/suco-acerola-300x300w-1.png&w=180&h=180" alt="Imagem-item" title="Imagem-item"/></figure>				<h5 style="margin-top: 3px;">Suco de Acerola</h5>
+				<p> Suco de Acerola 300 ml </p>
+				
+				<strong style="float: right;">
+				<b style='cursor:pointer;'>R$ 8,00</b>				</strong>
+					</td>
+					
+					<form id="addItemPost_18" name="addItemPost_18" method="post">
+					<td class="options">
+					    <div class="dropdown dropdown-options">
+					    
+					    <!-- Modal -->
+					    <div style="margin-top: 10px;" class="modal fade popuppedido" id="popuppedido_18" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					    <div class="modal-content">
+					    <div class="modal-body">
+						<div class="dropdown-menupop" style="border-bottom: none;">
+						<a data-dismiss="modal" style="float: right;cursor: pointer;"id="fecharmodallogin" class="close-link"><i class="icon_close_alt2"></i></a>
+						
+						<center><b>Suco de Acerola    						<br /><b style='color: #4eb93e;'>R$ 8,00</b>						</b></center>
+						
+						<center>
+						    <br /><img width="70%" height="" src="https://cardapiozap.app.br/uploads/images/2020/01/suco-acerola-300x300w-1.png" /><br /><br />					    </center>
+						    
+						    <input type="hidden" name="valor" value="8.00">		
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais18 input[type=checkbox]').change(function(){
+			var maximopermitidoo = 2;
+			var controlee = $('#cf_group_adicionais18 input[type=checkbox]:checked').length;
+
+			if(controlee > maximopermitidoo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>	
+
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+
+
+	
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais_pagos18 input[type=checkbox]').change(function(){
+			var maximopermitidooo = 1000;
+			var controleee = $('#cf_group_adicionais_pagos18 input[type=checkbox]:checked').length;
+
+			if(controleee > maximopermitidooo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais2').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais2').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>
+
+
+		
+
+
+<!--INICIO DA QUANTIDADE-->
+<h5>Quantidade</h5>							
+<div class="input-group">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quantidade">
+			<span class="glyphicon glyphicon-minus"></span>
+		</button>
+	</span>
+	<input style="height: 34px;" type="text" name="quantidade" class="form-control input-number qtdpedido" value="1" min="1" max="100">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-success btn-number" data-type="plus" data-field="quantidade">
+			<span class="glyphicon glyphicon-plus"></span>
+		</button>
+	</span>
+</div>
+<!--FIM DA QUANTIDADE-->
+<br />
+	<textarea class="form-control obsitem" rows="3" placeholder="Alguma observa��o p/ este pedido?" name="observacao"></textarea>
+	
+<input type="hidden" name="id-item" value="18">
+<input type="hidden" name="add-Item" value="true">
+<input type="hidden" name="userid" value="1">
+<input type="hidden" name="nome_item" value="Suco de Acerola">
+<input type="hidden" name="nomeloja" value="lojateste">
+<br />
+
+
+</div>
+<div class="modal-footer">
+	<center><button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar janela</button></center>
+	<br>
+	<br>
+	<br>
+</div>
+</div>
+
+</div>
+
+</div>
+	
+	<a class="adicionarItemPedido_18">
+		<div id="footer">
+			<b>ADICIONAR AO PEDIDO</b>
+		</div>
+	</a>
+
+	
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.adicionarItemPedido_18').click(function(){
+			$.ajax({
+				url: 'https://cardapiozap.app.br/includes/processaAddItem.php',
+				method: "post",
+				data: $('#addItemPost_18').serialize(),
+
+				success: function(data){				
+					$('#resultadoAddItem').html(data);					
+					$('.qtdpedido').val('1');
+				}
+			});
+
+		}); 
+	});
+</script>
+
+</div>
+</div>
+</div>
+
+</div>
+</td>
+</form>
+</tr>
+				
+				<tr>
+				    <td data-toggle="modal" data-target="#popuppedido_17">
+				<figure class="thumb_menu_list"><img class="lightbox" src="https://cardapiozap.app.br/tim.php?src=https://cardapiozap.app.br/uploads/images/2020/01/bebidas-suco-de-laranjajpg-600x600.jpg&w=180&h=180" alt="Imagem-item" title="Imagem-item"/></figure>				<h5 style="margin-top: 3px;">Suco de Laranja</h5>
+				<p> Suco de Laranja  300 ml </p>
+				
+				<strong style="float: right;">
+				<b style='cursor:pointer;'>R$ 1,00</b>				</strong>
+					</td>
+					
+					<form id="addItemPost_17" name="addItemPost_17" method="post">
+					<td class="options">
+					    <div class="dropdown dropdown-options">
+					    
+					    <!-- Modal -->
+					    <div style="margin-top: 10px;" class="modal fade popuppedido" id="popuppedido_17" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					    <div class="modal-content">
+					    <div class="modal-body">
+						<div class="dropdown-menupop" style="border-bottom: none;">
+						<a data-dismiss="modal" style="float: right;cursor: pointer;"id="fecharmodallogin" class="close-link"><i class="icon_close_alt2"></i></a>
+						
+						<center><b>Suco de Laranja    						<br /><b style='color: #4eb93e;'>R$ 1,00</b>						</b></center>
+						
+						<center>
+						    <br /><img width="70%" height="" src="https://cardapiozap.app.br/uploads/images/2020/01/bebidas-suco-de-laranjajpg-600x600.jpg" /><br /><br />					    </center>
+						    
+						    <input type="hidden" name="valor" value="1.00">		
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais17 input[type=checkbox]').change(function(){
+			var maximopermitidoo = 2;
+			var controlee = $('#cf_group_adicionais17 input[type=checkbox]:checked').length;
+
+			if(controlee > maximopermitidoo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>	
+
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+<!--  DICIONAIS E COMPLEMENTOS PAGOS-->
+
+
+	
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		$('#cf_group_adicionais_pagos17 input[type=checkbox]').change(function(){
+			var maximopermitidooo = 1000;
+			var controleee = $('#cf_group_adicionais_pagos17 input[type=checkbox]:checked').length;
+
+			if(controleee > maximopermitidooo){
+				$(this).prop('checked', '');
+				$(this).addClass("tremer");
+				$('.totaladitionais2').addClass("tremer");
+				setTimeout(function() {
+					$('input[type=checkbox]').removeClass("tremer");
+					$('.totaladitionais2').removeClass("tremer");
+				}, 1000);
+			};
+		});
+	});
+</script>
+
+
+		
+
+
+<!--INICIO DA QUANTIDADE-->
+<h5>Quantidade</h5>							
+<div class="input-group">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quantidade">
+			<span class="glyphicon glyphicon-minus"></span>
+		</button>
+	</span>
+	<input style="height: 34px;" type="text" name="quantidade" class="form-control input-number qtdpedido" value="1" min="1" max="100">
+	<span class="input-group-btn">
+		<button style="height: 34px;" type="button" class="btn btn-success btn-number" data-type="plus" data-field="quantidade">
+			<span class="glyphicon glyphicon-plus"></span>
+		</button>
+	</span>
+</div>
+<!--FIM DA QUANTIDADE-->
+<br />
+	<textarea class="form-control obsitem" rows="3" placeholder="Alguma observa��o p/ este pedido?" name="observacao"></textarea>
+	
+<input type="hidden" name="id-item" value="17">
+<input type="hidden" name="add-Item" value="true">
+<input type="hidden" name="userid" value="1">
+<input type="hidden" name="nome_item" value="Suco de Laranja">
+<input type="hidden" name="nomeloja" value="lojateste">
+<br />
+
+
+</div>
+<div class="modal-footer">
+	<center><button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar janela</button></center>
+	<br>
+	<br>
+	<br>
+</div>
+</div>
+
+</div>
+
+</div>
+	
+	<a class="adicionarItemPedido_17">
+		<div id="footer">
+			<b>ADICIONAR AO PEDIDO</b>
+		</div>
+	</a>
+
+	
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.adicionarItemPedido_17').click(function(){
+			$.ajax({
+				url: 'https://cardapiozap.app.br/includes/processaAddItem.php',
+				method: "post",
+				data: $('#addItemPost_17').serialize(),
+
+				success: function(data){				
+					$('#resultadoAddItem').html(data);					
+					$('.qtdpedido').val('1');
+				}
+			});
+
+		}); 
+	});
+</script>
+
+</div>
+</div>
+</div>
+
+</div>
+</td>
+</form>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+</div>
+
+
+</div>
+        <!-- FIM DA BOX NOSSOS PRODUTOS --> 
+    </div>
+    <!-- FIM DA DIV BANNER & CARDAPIO --> 
+
+
+<div class="col-md-3" id="sidebar">
+
+	<div class="theiaStickySidebar">
+		<div id="cart_box" >
+			<h3>SEU PEDIDO <i class="icon_cart_alt pull-right"></i></h3>					
+			<div id="div-img-fome"><figure><img id="img-fome" src="https://cardapiozap.app.br/img/imgfome.png" title="img-fome" alt="img-fome" /></figure></div>			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#limparcarrinho').click(function(){	
+						var statusclean = 'sim';			
+						$('#limparcarrinho').prop('disabled', true);
+
+						$.ajax({
+							url: 'https://cardapiozap.app.br/includes/processalimparcarrinho.php',
+							method: 'post',
+							data: {'limparcart':statusclean, 'getlojal' : 'lojateste'},
+							success: function(data){
+								$('#limparcarrinho').prop('disabled', false);
+								$('#divlimparcarrinho').html(data);
+							}
+						});
+
+					});
+				});
+			</script>
+			<form data-toggle="validator" action="https://cardapiozap.app.br/lojateste/carrinho" method="post">
+				<hr>
+				<div class="row" id="options_2" style="padding-left: 12px;">
+											<div style="width: 100%;">
+							<div class="radio icheck-midnightblue">					
+								<input type="radio" required value='true' checked="" id="enterega" name="opcao_delivery" 
+								required />
+								<label for="enterega">
+									<span style="color:#444;">
+										<p style="font-size: 14px;">No endere�o - (Delivery)</p>
+									</span>
+								</label>
+							</div>
+						</div>
+																<div style="width: 100%;">
+							<div class="radio icheck-midnightblue">					
+								<input type="radio" required value='false' id="buscar" name="opcao_delivery" 
+								required />
+								<label for="buscar">
+									<span style="color:#444;">
+										<p style="font-size: 14px;">Retirar no Balc�o</p>
+									</span>
+								</label>
+							</div>
+						</div>
+																<div style="width: 100%;">
+							<div class="radio icheck-midnightblue">					
+								<input type="radio" required value='false2' id="mesa" name="opcao_delivery" 
+								required />
+								<label for="mesa">
+									<span style="color:#444;">
+										<p style="font-size: 14px;">Entregar na Mesa</p>
+									</span>
+								</label>
+							</div>
+						</div>
+									</div><!-- Edn options 2 -->	
+				<hr>
+				<table class="table table_summary">
+					<tbody>
+						<tr>
+							<td>
+								Pedido 
+								<span class="pull-right">
+									R$ 0,00
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Adicionais: <span class="pull-right">
+									R$ 
+									0,00</span>
+								</td>
+							</tr>
+														<tr>
+								<td class="total">
+																		Subtotal
+									<span class="pull-right">
+										R$ <b id="v-total-p">
+											0,00										</b>
+									</span>
+								</td>
+
+							</tr>
+						</tbody>
+					</table>	
+
+
+					<hr>
+
+					<a class="btn_full_outline validarCupom" style="margin-bottom: 5px;">CUPOM DE DESCONTO </a>
+					<button type="submit" class="btn_full">CONCLUIR PEDIDO</button>
+					<script type="text/javascript">
+						$(document).ready(function(){
+							$('.validarCupom').click(function(){
+								x0p('Coloque seu c�digo', null, 'input',
+									function(button, text) {
+										if(button == 'info'){
+											$.ajax({
+												url: 'https://cardapiozap.app.br/includes/processaativacupom.php',
+												method: 'post',
+												data: {'codigocupom' : text, 'iduser' : '1'},
+												success: function(data){											
+													if(data == 'erro0'){
+														x0p('Opss...', 
+															'Cupom inv�lido!',
+															'error', false);
+													}else if(data == 'erro1'){
+														x0p('Opss...', 
+															'Cupom vencido!',
+															'error', false);
+													}else if(data == 'erro2'){
+														x0p('Opss...', 
+															'Esse cupom expirou!',
+															'error', false);
+													}else if(data == 'erro3'){
+														x0p('Opss...', 
+															'Ocorreu um arro ao validdar!',
+															'error', false);
+													}else if(data == 'erro4'){
+														x0p('Opss...', 
+															'Voc� j� tem um desconto Ativo!',
+															'error', false);
+													}else if(data == 'true'){
+														x0p('Parab�ns!', 
+															'Desconto aplicado!', 
+															'ok', false);
+														$('#sidebar').load('https://cardapiozap.app.br/includes/sidebar.php', {"getloja" : "lojateste"});
+													}
+
+												}
+											});
+										}
+										if(button == 'cancel') {
+											x0p('Cancelado', 
+												'Quer ganhar um desconto? Entre em contato.',
+												'error', false);
+										}
+									});
+							});
+						});
+					</script>	
+
+				</form>
+				
+			</div><!-- End cart_box -->
+		</div><!-- End theiaStickySidebar -->
+
+				<script type="text/javascript">
+			$("#whatsapp a").click(function(event){
+				event.preventDefault();
+				var dest=0;
+				if($(this.hash).offset().top > $(document).height()-$(window).height()){
+					dest=$(document).height()-$(window).height();
+				}else{
+					dest=$(this.hash).offset().top;
+				}
+				$('html,body').animate({scrollTop:dest}, 1000,'swing');
+			});
+		</script>
+	</div><!-- End col-md-3 -->
+</div>
+<!-- End row -->
+
+<div id="resultadoAddItem"></div>
+<div id="updatesidebar"></div>
+<div id="divlimparcarrinho"></div>
+
+<div id='goTop'></div>
+
+<script type="text/javascript">
+	$(function () {
+		$('#goTop').goTop({
+			scrolltime: 800,
+			src:"icon-up-circled",
+			width: 45,
+			place:"left",
+			fadein: 500,
+			fadeout: 500,
+			opacity: 0.6,
+			marginX: 0,
+			marginY: 0,
+			zIndex: 9
+		});
+	});
+</script>
+
+<style type="text/css">
+	.tremer{
+		animation: treme 0.1s;
+		animation-iteration-count: 3;
+	}
+
+	@keyframes treme {
+		0% {margin-left: 0;}
+		25% {margin-left: 5px;}
+		50% {margin-left: 0;}
+		75% {margin-left: -5px;}
+		100% {margin-left: 0;}
+	}
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.ocultarmeioameio').hide();
+	});
+</script>
+
+<div id="resultadogetmeioameio"></div>
+
+<script type="text/javascript">
+	
+
+	$('.tamanho_item').click(function (){
+		var vaaloridtamahoclick = $(this).data('idtaamanho');
+		var iddoitem = $(this).data('iddoitem');
+		var iddacategoria = $(this).data('iddacategoria');
+
+		$('input:checkbox').prop("checked", false);
+		$('.id_checkbox'+iddoitem).prop("checked", true);
+		$('.id_checkbox'+iddoitem).prop("readonly", true);
+
+		$.ajax({
+			url: 'https://cardapiozap.app.br/controlers/mostrar-meioameio.php',
+			method: 'post',
+			data: {'iditem' : iddoitem, 'idcat' : iddacategoria, 'idoption' : vaaloridtamahoclick, 'userid' : '1'},
+			success:function(data){
+
+				if(data == 0){
+
+					$("#mostrarmeioameio_"+iddoitem).hide();
+					$('#resultadogetmeioameio').html();
+					
+				}else{
+
+					$('#resultadogetmeioameio').html(data);				
+				}
+			}
+		});
+
+		$.ajax({
+			url: 'https://cardapiozap.app.br/controlers/alterar-tipo-meioameio.php',
+			method: 'post',
+			data: {'iditem' : iddoitem, 'idcat' : iddacategoria, 'idoption' : vaaloridtamahoclick, 'userid' : '1'},
+			success:function(data){		
+
+				document.getElementById('alterarmeioameio_'+iddoitem).value=data;	
+				if(data == 1){
+					$('#infomeioameio_'+iddoitem).text('* Ser� cobrado pelo sabor de maior valor');
+					$('.hiden_'+iddoitem).show();
+				}else{
+					$('#infomeioameio_'+iddoitem).text('');
+					$('.hiden_'+iddoitem).hide();
+				}				
+
+			}
+		});
+
+	});
+
+</script></div><!-- End container -->
+<!-- End Content =============================================== -->
+
+<!-- Footer ================================================== -->
+<div style="margin-top: 50px;" class="modal fade modal-horarios" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="container">
+				<br />
+				<b style="color: #61617a;"><i class="icon_pin"></i>  Endere�o para retirar pedidos</b>
+				<br />
+				<br />
+				<p style="color: #61617a;font-size: 15px;">Rua Almirante Barroso, 968 <br /> Centro - Porto Velho - RO						</p>
+		<br />
+		
+					<b style="color: #61617a;"><i class="icon_pin"></i>  Bairros de entrega </b>
+			<br />
+			<br />
+			<table style="width: 250px;" data-sortable class="table">
+				<thead>
+					<tr>
+						<th scope="col">BAIRROS</th>
+						<th scope="col">TAXA</th>
+					</tr>
+				</thead>
+				<tbody>
+											<tr>
+							<th>Aponia </th>
+							<td>R$ 10,00</td>
+						</tr>
+												<tr>
+							<th>Cristal da Calama </th>
+							<td>R$ 10,00</td>
+						</tr>
+												<tr>
+							<th>Cunia </th>
+							<td>R$ 8,00</td>
+						</tr>
+												<tr>
+							<th>Jk 1 </th>
+							<td>R$ 6,00</td>
+						</tr>
+												<tr>
+							<th>Marcos Freire </th>
+							<td>R$ 8,00</td>
+						</tr>
+												<tr>
+							<th>Mariana </th>
+							<td>R$ 6,00</td>
+						</tr>
+												<tr>
+							<th>Parque Amazonia </th>
+							<td>R$ 8,00</td>
+						</tr>
+												<tr>
+							<th>Planalto </th>
+							<td>R$ 10,00</td>
+						</tr>
+												<tr>
+							<th>Porto Crist0 </th>
+							<td>R$ 7,00</td>
+						</tr>
+												<tr>
+							<th>Resnancer </th>
+							<td>R$ 8,00</td>
+						</tr>
+												<tr>
+							<th>Sao  Francisco </th>
+							<td>R$ 5,00</td>
+						</tr>
+												<tr>
+							<th>Socialista </th>
+							<td>R$ 6,00</td>
+						</tr>
+												<tr>
+							<th>Tancredo Neves </th>
+							<td>R$ 7,00</td>
+						</tr>
+												<tr>
+							<th>Teixeirao </th>
+							<td>R$ 10,00</td>
+						</tr>
+												<tr>
+							<th>Todos </th>
+							<td>R$ 10,00</td>
+						</tr>
+												<tr>
+							<th>Todos </th>
+							<td>R$ 10,00</td>
+						</tr>
+												<tr>
+							<th>Tres  Maria </th>
+							<td>R$ 7,00</td>
+						</tr>
+												<tr>
+							<th>Ulisses Guimaraes </th>
+							<td>R$ 10,00</td>
+						</tr>
+						
+				</tbody>
+			</table>
+
+		
+	</div>
+	<div class="modal-footer">
+		<center><button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button></center>
+	</div>
+</div>
+</div>
+</div><!-- FINAL DO MODAL QUE APRESENHA OS HOR�RIOS -->
+
+
+<!-- INICIO DO MODAL QUE APRESENtA OS HOR�RIOS -->
+<div style="margin-top: 50px;" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<center><h3>Hor�rios de atendimento</h3></center>
+			<center><b>SEGUNDA FEIRA</b><br /><span style='background-color: #efefef'>00:30 �s 12:00<br />12:00 �s 00:00</span></center><center><b>TER�A FEIRA</b><br /><span style='background-color: #efefef'>00:00 �s 12:00<br />12:00 �s 00:00</span></center><center><b>QUARTA FEIRA</b><br /><span style='background-color: #efefef'>00:00 �s 12:00<br />12:00 �s 00:00</span></center><center><b>QUINTA FEIRA</b><br /><span style='background-color: #efefef'>00:00 �s 12:00<br />12:00 �s 00:00</span></center><center><b>SEXTA FEIRA</b><br /><span style='background-color: #efefef'>00:00 �s 12:00<br />12:00 �s 00:00</span></center><center><b>SABADO</b><br /><span style='background-color: #efefef'>00:00 �s 12:00<br />12:00 �s 00:00</span></center><center><b>DOMINGO</b><br /><span style='background-color: #efefef'>00:00 �s 12:00<br />12:00 �s 00:00</span></center><br />
+<div class="modal-footer">
+	<center><button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button></center>
+</div>
+</div>
+</div>
+
+</div><!-- FINAL DO MODAL QUE APRESENHA OS HOR�RIOS -->
+<footer id="footeroriginal">		
+	<div id="social_footer">
+		<center><b>Siga-nos nas redes sociais:</b></center><br />
+		<ul>
+			<li><a target="_blank" href="https://www.facebook.com/"><i class="icon-facebook"></i></a></li>			<li><a target="_blank" href="https://www.instagram.com/"><i class="icon-instagram"></i></a></li>			<li><a target="_blank" href="https://www.twitter.com/"><i class="icon-twitter"></i></a></li>		</ul>
+		<p>� Loja Teste - 2023</p>
+	</div>		
+</footer>
+<!-- End Footer =============================================== -->
+
+<div class="layer"></div><!-- Mobile menu overlay mask -->
+
+<!-- COMMON SCRIPTS -->
+
+<script src="https://cardapiozap.app.br/js/common_scripts_min.js"></script>
+<script src="https://cardapiozap.app.br/js/functions.js"></script>
+<script src="https://cardapiozap.app.br/assets/validate.js"></script>
+<script src="https://cardapiozap.app.br/js/jquery.mask.js"></script>
+<script src="https://cardapiozap.app.br/js/index-btn-file.js"></script>
+<script src="https://cardapiozap.app.br/js/funcoesjs.js"></script>
+<script src="https://cardapiozap.app.br/js/custom-file-input.js"></script>
+<script src="https://cardapiozap.app.br/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+<script src="https://cardapiozap.app.br/js/parallax.js"></script>
+<script src="https://cardapiozap.app.br/js/parallax.min.js"></script>
+<script src="https://cardapiozap.app.br/js/printThis.js"></script>
+<script src="https://cardapiozap.app.br/js/suportewats.js"></script>
+
+<script>
+	jQuery(document).ready(function($){
+		$('a').not('[href*="'+document.domain+'"]').attr('target', '_blank');
+		$('a').not('[href*="'+document.domain+'"]').attr('rel', 'external nofollow');
+	});
+</script>
+
+<script>
+	$( function() {
+		$( "#datepicker" ).datepicker();
+	} );
+</script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js'></script>
+
+<!-- SPECIFIC SCRIPTS -->
+<script  src="https://cardapiozap.app.br/js/cat_nav_mobile.js"></script>
+<script>$('#cat_nav').mobileMenu();</script>
+<script src="https://cardapiozap.app.br/js/theia-sticky-sidebar.js"></script>
+<script>
+	jQuery('#sidebar').theiaStickySidebar({
+		additionalMarginTop: 80
+	});
+</script>
+<script>
+	$('#cat_nav a[href^="#"]').on('click', function (e) {
+		e.preventDefault();
+		var target = this.hash;
+		var $target = $(target);
+		$('html, body').stop().animate({
+			'scrollTop': $target.offset().top - 70
+		}, 900, 'swing', function () {
+			window.location.hash = target;
+		});
+	});
+</script>
+
+
+	<script type="text/javascript">
+//plugin bootstrap minus and plus
+//http://jsfiddle.net/laelitenetwork/puJ6G/
+$('.btn-number').click(function(e){
+	e.preventDefault();
+
+	fieldName = $(this).attr('data-field');
+	type      = $(this).attr('data-type');
+	var input = $("input[name='"+fieldName+"']");
+	var currentVal = parseInt(input.val());
+	if (!isNaN(currentVal)) {
+		if(type == 'minus') {
+
+			if(currentVal > input.attr('min')) {
+				input.val(currentVal - 1).change();
+			} 
+			if(parseInt(input.val()) == input.attr('min')) {
+				$(this).attr('disabled', true);
+			}
+
+		} else if(type == 'plus') {
+
+			if(currentVal < input.attr('max')) {
+				input.val(currentVal + 1).change();
+			}
+			if(parseInt(input.val()) == input.attr('max')) {
+				$(this).attr('disabled', true);
+			}
+
+		}
+	} else {
+		input.val(0);
+	}
+});
+$('.input-number').focusin(function(){
+	$(this).data('oldValue', $(this).val());
+});
+$('.input-number').change(function() {
+
+	minValue =  parseInt($(this).attr('min'));
+	maxValue =  parseInt($(this).attr('max'));
+	valueCurrent = parseInt($(this).val());
+
+	name = $(this).attr('name');
+	if(valueCurrent >= minValue) {
+		$(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+	} else {
+		alert('Desculpe, o valor m�nimo foi atingido');
+		$(this).val($(this).data('oldValue'));
+	}
+	if(valueCurrent <= maxValue) {
+		$(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+	} else {
+		alert('Desculpe, o valor m�ximo foi atingido');
+		$(this).val($(this).data('oldValue'));
+	}
+});
+$(".input-number").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+             // Allow: Ctrl+A
+             (e.keyCode == 65 && e.ctrlKey === true) || 
+             // Allow: home, end, left, right
+             (e.keyCode >= 35 && e.keyCode <= 39)) {
+                 // let it happen, don't do anything
+             return;
+         }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+        	e.preventDefault();
+        }
+    });
+
+</script>
+
+<script type="text/javascript">
+	const selected = document.querySelector(".selected");
+	const optionsContainer = document.querySelector(".options-container");
+	const searchBox = document.querySelector(".search-box input");
+
+	const optionsList = document.querySelectorAll(".option");
+
+	selected.addEventListener("click", () => {
+		optionsContainer.classList.toggle("active");
+
+		searchBox.value = "";
+		filterList("");
+
+		if (optionsContainer.classList.contains("active")) {
+			searchBox.focus();
+		}
+	});
+	optionsList.forEach(o => {
+		o.addEventListener("click", () => {
+			selected.innerHTML = o.querySelector("label").innerHTML;
+			optionsContainer.classList.remove("active");
+		});
+	});
+
+	searchBox.addEventListener("keyup", function(e) {
+		filterList(e.target.value);
+	});
+	const filterList = searchTerm => {
+		searchTerm = searchTerm.toLowerCase();
+		optionsList.forEach(option => {
+			let label = option.firstElementChild.nextElementSibling.innerText.toLowerCase();
+			if (label.indexOf(searchTerm) != -1) {
+				option.style.display = "block";
+			} else {
+				option.style.display = "none";
+			}
+		});
+	};
+</script>
+
+    
+    </body>
+</html>
